@@ -1,5 +1,13 @@
 #!/bin/sh
 dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
+if [ $dataDevice = "sda2" ]; then
+    sudo  sed -i 's/datadev=mmcblk0p2/datadev=sda2/g' /sbin/cmdline.txt
+fi
+if [ $dataDevice = "mmcblk0p2" ]; then
+    sudo  sed -i 's/datadev=sda2/datadev=mmcblk0p2/g' /sbin/cmdline.txt 
+fi
+exit
+
 if [ -e /dev/mmcblk0p2 ]
   then
     echo "SD Filesystem exists." >>  /home/pi/start.log
