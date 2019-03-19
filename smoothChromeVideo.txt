@@ -1,0 +1,79 @@
+The Raspberry Pi is a tiny singleboard computer with a great potential. Its VideoCore GPU has a very interesting ability to make web surfing more smooth and comfortable. This ability is not implemented in regular Raspbian image yet, so I decide to write this topic.
+
+Chromium browser, the default browser in last Raspbian, was not developed for using hardware acceleration of the ARM GPU's. If we want to have exellent fullscreen video playback we need to use special programs, like Minimal Kiosk Browser which use OpenMax interface for media processing on the VideoCore IV GPU. So, can we have smooth fullscreen video in Chromium browser? Yes, we can!
+
+Newly Intel® announced a new Chrome* graphics rendering pipeline. It consists of using the parallelism between the CPU and GPU under Intel® architecture to render Web content faster, save system memory, and extend battery life by using a technique called zero-copy texture upload. Zero-copy texture uploads in Chrome OS*
+
+In fact this technology can improve web content rendering on all systems with integrated GPU. The problem is to get it works on the non Chrome OS platforms, like Raspbian. I found a workaround for it. :) Make sure we have 128 Mb shared GPU memory and updated system:
+
+sudo apt-get update; sudo apt-get dist-upgrade -y
+
+We need installed some libraries to get Chromium's ability to use Raspberry Pi GPU:
+
+sudo apt-get install mesa-vdpau-drivers -y
+
+Then, open Chromium browser and write in address line:
+
+chrome://flags
+
+Here find and set enabled next flags:
+
+#enable-gpu-rasterization = Enabled
+#enable-zero-copy
+#ignore-gpu-blacklist
+Next open in the editor Chromium shortcut (chromium-browser.desktop) and find the line:
+
+Exec=chromium-browser %U
+
+Edit it like this:
+
+Exec=chromium-browser --enable-native-gpu-memory-buffers %U
+
+If you want to get the maximum performance boost of your browser you need to enable all flags described in my article Super speed Chromium.
+
+It is also important to enable #load-media-router-component-extension . This means the video will be decoded directly by the Raspberry GPU outside the browser process.
+
+We can enable hidden flags by adding necessary parameters to the browser shortcut. Open it in the editor (chromium-browser.desktop file), find the line:
+
+Exec=chromium-browser %U
+
+Add flags before "%U" symbols:
+
+--start-maximized
+--enable-native-gpu-memory-buffers
+--enable-checker-imaging
+--enable-features=V8ContextSnapshot
+You can also do it with the following terminal commands:
+
+1) Copy the Chromium shortcut to the desktop:
+
+cp /usr/share/applications/chromium-browser.desktop \
+
+"$(xdg-user-dir DESKTOP)"
+
+2) Set allow execute flag:
+
+chmod +x "$(xdg-user-dir DESKTOP)/chromium-browser.desktop"
+
+3) Add necessary parameters to the shortcut:
+
+sed -i "s|Exec=chromium-browser|Exec=chromium-browser \
+
+--start-maximized \
+
+--enable-native-gpu-memory-buffers \
+
+--enable-checker-imaging \
+
+--enable-features=V8ContextSnapshot|g" \
+
+"$(xdg-user-dir DESKTOP)/chromium-browser.desktop"
+
+For Raspberry Pi 3 (128 MB GPU memory) my updated result is smooth 1080p youtube playing with 17% CPU load. If you want to play HTML5 videos set GPU memory to 256 MB and disable h264ifi extension. Note that Raspberry Pi 3 can smoothly play max 720p video in this mode.
+
+To fix random system hangs due to a small amount of RAM you can enable optimized swapping according to my article Effective Raspberry Pi ZRAM usage.
+
+Sergey Kovalenko (c)
+
+Email: seryoga.engineering@gmail.com
+

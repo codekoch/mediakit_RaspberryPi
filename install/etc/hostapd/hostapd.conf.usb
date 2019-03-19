@@ -1,0 +1,26 @@
+# WLAN-Router-Betrieb
+
+# Schnittstelle und Treiber
+interface=wlan1
+#driver=nl80211
+
+# WLAN-Konfiguration
+ssid=MK-b827ebe91d6d
+channel=1
+hw_mode=g
+ieee80211n=1
+ieee80211d=1
+country_code=DE
+wmm_enabled=1
+max_num_sta=60
+
+# WLAN-Verschlüsselung
+auth_algs=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+rsn_pairwise=CCMP
+wpa_pairwise=TKIP
+wpa_passphrase=mediakit712
+
+
+
