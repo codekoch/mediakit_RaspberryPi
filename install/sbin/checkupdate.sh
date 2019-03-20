@@ -17,8 +17,8 @@ do
 usbDevice="`readlink -e /dev/disk/by-id/$entry`"
 usbDevice="`ls $usbDevice* | tail -1`"
 echo "check usbDevice=$usbDevice"
-if ! [[ $usbDevice == *"$dataDevice"* ]]; then
-usbLink=$entry 
+if ! [[ $usbDevice == *"$dataDevice"* ]]; then 
+usbLink=$entry
 break 
 fi
 echo "Skipped!It's the data device!"
@@ -26,10 +26,10 @@ done
 
 echo "usblink="$usbLink
 echo "usbDevice="$usbDevice
-mkdir /media/pi/usbImage
-sudo mount $usbDevice /media/pi/usbImage
-if [ -e /media/pi/usbImage/$file ]; then
-   echo "found imagefile"
+mkdir /media/mk/usbImage
+sudo mount $usbDevice /media/mk/usbImage
+if [ -e /media/mk/usbImage/$file ]; then
+   #echo "found imagefile"
    questiontext="Update from USB possible!\nStart update?\nUpdate will take a few minutes.\n(Be sure it is the right image file!)"
    zenity --width=600 --height=400 --question --text "$questiontext" 2> /dev/null
    case $? in 
