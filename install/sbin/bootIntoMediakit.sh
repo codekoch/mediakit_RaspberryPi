@@ -6,8 +6,8 @@ if [[ -z $WANTOS ]]; then
   exit 2
 fi
 
-sudo mount /dev/$dataDevice /media/pi/berryboot
-cd /media/pi/berryboot/images
+sudo mount /dev/$dataDevice /media/mk/berryboot
+cd /media/mk/berryboot/images
 IMGNAME=$(ls $WANTOS.img*)
 
 if [[ -z $IMGNAME ]]; then
