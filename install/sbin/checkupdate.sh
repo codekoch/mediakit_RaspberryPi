@@ -10,14 +10,15 @@ rm $path/update.txt
 ### check if Image exists on USB Stick
 dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
 ### get usb-device-links
-mapfile -t usbLink < <(ls /dev/disk/by-id | grep -i 'usb' | grep -v 'part')
+mapfile -t usbLinks < <(ls /dev/disk/by-id | grep -i 'usb' | grep -v 'part')
 #usbLink=(`ls /dev/disk/by-id | grep -i 'usb' | grep -v 'part'`)
-for entry in "${usbLink[@]}"
+for entry in "${usbLinks[@]}"
 do
 usbDevice="`readlink -e /dev/disk/by-id/$entry`"
 usbDevice="`ls $usbDevice* | tail -1`"
 echo "check usbDevice=$usbDevice"
-if ! [[ $usbDevice == *"$dataDevice"* ]]; then 
+if ! [[ $usbDevice == *"$dataDevice"* ]]; then
+ubsLink=$entry 
 break 
 fi
 echo "Skipped!It's the data device!"
