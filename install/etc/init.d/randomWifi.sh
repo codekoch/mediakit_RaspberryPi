@@ -24,6 +24,8 @@ mac="`sudo /sbin/ifconfig eth0 | grep 'ether ' | awk '{ print $2}'`"
 mac2="`echo "$mac" | sed 's/\://g'`"
 wlanssid="MK-"$mac2
 sudo  sed -i 's/ssid=.*$/ssid='$wlanssid'/g' /etc/hostapd/hostapd.conf
+sudo  sed -i 's/ssid=.*$/ssid='$wlanssid'/g' /etc/hostapd/hostapd.conf.usb 
+sudo  sed -i 's/ssid=.*$/ssid='$wlanssid'/g' /etc/hostapd/hostapd.conf.intern
 sudo  sed -i 's/wlanssid=.*$/wlanssid="'$wlanssid'"/g' /etc/init.d/info.sh
 
 # check if we have two wlan devices
