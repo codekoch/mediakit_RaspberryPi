@@ -1,5 +1,7 @@
 #!/bin/sh
+sudo mount /dev/mmcblk0p1 /boot
 dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
+
 if [ $dataDevice = "sda2" ]; then
     sudo  sed -i 's/datadev=mmcblk0p2/datadev=sda2/g' /sbin/cmdline.txt
 fi
