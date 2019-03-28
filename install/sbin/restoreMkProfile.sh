@@ -24,8 +24,8 @@ if [ -e /dev/mmcblk0p2 ]
     sudo cp /sbin/cmdline.txt /a
     sudo cp /sbin/config.txt /a
 #    sudo /sbin/checkupdate.sh
-    sudo rm -R /b/data/Mediakit.img256/home/mk/* #Remove the mk folder.
-    sudo rm -R /b/data/Mediakit.img256/home/mk/.* #Remove the mk folder.
+    sudo rm -R /b/data/Mediakit.img*/home/mk/* #Remove the mk folder.
+    sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     sudo umount /dev/$dataDevice
     sudo umount /dev/mmcblk0p1
 else
@@ -34,8 +34,8 @@ else
     sudo cp /sbin/cmdline.txt /a 
     sudo cp /sbin/config.txt /a
 #    sudo /sbin/checkupdate.sh
-    sudo rm -R /b/data/Mediakit.img256/home/mk/* #Remove the mk folder.
-    sudo rm -R /b/data/Mediakit.img256/home/mk/.* #Remove the mk folder.
+    sudo rm -R /b/data/Mediakit.img*/home/mk/* #Remove the mk folder.
+    sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     sudo umount /dev/$dataDevice
     sudo umount /dev/sda1
 fi
