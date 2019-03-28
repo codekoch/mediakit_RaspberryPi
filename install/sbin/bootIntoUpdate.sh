@@ -1,13 +1,13 @@
 #!/bin/bash
 WANTOS=Update
-dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
+dataDevice="`cat /a/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
 if [[ -z $WANTOS ]]; then
   echo Usage: ./reboot-into.sh osname
   exit 2
 fi
 
-sudo mount /dev/$dataDevice /media/mk/berryboot
-cd /media/mk/berryboot/images
+sudo mount /dev/$dataDevice /b
+cd /b/images
 IMGNAME=$(ls $WANTOS.img*)
 
 if [[ -z $IMGNAME ]]; then
