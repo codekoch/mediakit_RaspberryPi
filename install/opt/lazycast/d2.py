@@ -44,6 +44,10 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 connectcounter = 0
 while True: 
+        output = subprocess.check_output("ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}' | wc -l", shell=True)
+        if int(output) < 1:
+            sock.close()
+            sys.exit(1)
 	try:
 		sock.connect(server_address)
 	except socket.error, e:
