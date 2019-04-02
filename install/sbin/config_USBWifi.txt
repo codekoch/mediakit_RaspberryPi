@@ -1,0 +1,38 @@
+disable_overscan=1
+#disable_splash=1
+
+start_x=1
+gpu_mem=192
+
+# Enable on-board audio
+dtparam=audio=on
+# Disable LocalWifi
+dtoverlay=pi3-disable-wifi
+# Diable Bluetooth
+# dtoverlay=pi3-disable-bt
+# disable_audio_dither=1
+# audio_pwm_mode=2
+amixer cset numid=3 1
+# Berryboot settings, do not change
+initramfs berryboot.img
+
+kernel=kernel_rpi2_aufs.img
+
+[pi3]
+# Uncomment this line before installation if you want to enable USB boot
+#program_usb_boot_mode=1
+
+[pi0]
+kernel=kernel_rpi_aufs.img
+
+[pi1]
+kernel=kernel_rpi_aufs.img
+
+# Warning: CMA does not work properly in newer firmware versions
+#
+#cma_lwm=16
+#cma_hwm=32
+#cma_offline_start=16
+
+[all]
+
