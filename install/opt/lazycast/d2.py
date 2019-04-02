@@ -33,7 +33,7 @@ sound_output_select = 1
 # 1: 3.5mm audio jack output
 # 2: alsa
 disable_1920_1080_60fps = 1
-enable_mouse_keyboard = 1
+enable_mouse_keyboard = 0
 
 ####################################################
 
@@ -201,6 +201,14 @@ def launchplayer(player_select):
 	elif player_select == 3:
 		os.system('omxplayer rtp://0.0.0.0:1028 -n -1 --live &')
 
+def running():
+    output = subprocess.check_output("ps aux | grep 'h264.bin' | wc -l", shell=True)
+    if int(output) > 2:
+       return True   
+    else:
+       return False
+
+
 launchplayer(player_select)
 
 fcntl.fcntl(sock, fcntl.F_SETFL, os.O_NONBLOCK)
@@ -209,6 +217,8 @@ fcntl.fcntl(idrsock, fcntl.F_SETFL, os.O_NONBLOCK)
 csnum = 102
 watchdog = 0
 while True:
+        if not running():
+            launchplayer(player_select)
 	try:
 		data = (sock.recv(1000))
 	except socket.error, e:
