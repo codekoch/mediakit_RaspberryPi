@@ -23,6 +23,7 @@ from threading import Thread
 import time
 from time import sleep
 import sys
+import os
 ##################### Settings #####################
 player_select = 2
 # 0: non-RPi systems. (using vlc)
@@ -43,6 +44,21 @@ sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 connectcounter = 0
+def miracastIpCheck():
+    global sock 
+    print 'Check p2p-device'
+    while True:
+        sleep(10)
+        output = subprocess.check_output("ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}' | wc -l", shell=True)
+        if (int(output) < 1):
+            print("Lost p2p-device...")
+            sock.close()
+            os._exit(1)
+            break
+    return
+miracastIp = threading.Thread(target=miracastIpCheck)
+miracastIp.setDaemon(False)
+miracastIp.start()
 while True: 
 	try:
 		sock.connect(server_address)
@@ -207,6 +223,7 @@ def running():
        return True   
     else:
        return False
+
 
 launchplayer(player_select)
 

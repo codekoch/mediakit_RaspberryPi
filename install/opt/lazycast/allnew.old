@@ -1,5 +1,5 @@
 #!/bin/bash
-pin="65100000"
+pin="00100000"
 cd /opt/lazycast
 while :
 do      
@@ -9,6 +9,7 @@ do
         sudo /sbin/restoreP2PWlan.sh
         pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/info.jpg"
         else
+        sudo wpa_cli flush
         echo "" > /var/lib/misc/dnsmasq.leases
         sudo service dnsmasq restart
         fi
