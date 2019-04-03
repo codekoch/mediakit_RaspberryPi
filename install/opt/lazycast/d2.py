@@ -38,9 +38,32 @@ enable_mouse_keyboard = 0
 ####################################################
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.settimeout(30)
 server_address = ('192.168.173.80', 7236)
 sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+miracastCheckStop = False
+
+def miracastIpCheck():
+    global sock 
+    global connectcounter 
+    global miracastCheckStop
+    print 'Check p2p-device'
+    while True:
+        sleep(10)
+        output = subprocess.check_output("ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}' | wc -l", shell=True)
+        if (int(output) < 1):
+            print("Lost p2p-device...")
+            sock.close()
+            connectcounter = 20
+            break
+        if (miracastCheckStop):
+            print("Stop checking p2p-device")
+            break
+    return
+
+miracastIp = threading.Thread(target=miracastIpCheck)
+miracastIp.start()
 
 connectcounter = 0
 while True: 
@@ -54,6 +77,7 @@ while True:
 	else:
 		break
 
+miracastCheckStop = True
 idrsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 idrsock_address = ('127.0.0.1', 0)
 idrsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
