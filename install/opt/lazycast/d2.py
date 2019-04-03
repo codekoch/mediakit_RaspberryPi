@@ -55,7 +55,7 @@ def miracastIpCheck():
         output = subprocess.check_output("ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}' | wc -l", shell=True)
         if (int(output) < 1):
             try:
-                pymsgbox.alert('miracast connection attempt failed and crashed the device!\nYou have to restart the mediakit!', 'miracast error!')
+                pymsgbox.alert('miracast connection attempt failed and crashed the device!\nReset will be initiated soon...please wait.', 'miracast error!',timeout=5000)
             except:
                 print("OK")
             print("Lost p2p-device...")
