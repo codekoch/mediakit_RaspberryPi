@@ -23,6 +23,7 @@ from threading import Thread
 import time
 from time import sleep
 import sys
+import pymsgbox.native as pymsgbox
 ##################### Settings #####################
 player_select = 2
 # 0: non-RPi systems. (using vlc)
@@ -53,8 +54,11 @@ def miracastIpCheck():
         sleep(10)
         output = subprocess.check_output("ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}' | wc -l", shell=True)
         if (int(output) < 1):
+            try:
+                pymsgbox.alert('miracast connection attempt failed and crashed the device!\nYou have to restart the mediakit!', 'miracast error!')
+            except:
+                print("OK")
             print("Lost p2p-device...")
-            sock.close()
             connectcounter = 20
             break
         if (miracastCheckStop):
