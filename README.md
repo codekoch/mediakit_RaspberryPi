@@ -25,9 +25,14 @@ Olaf Koch und Dr. Simon Zander
 Update der RaspberryPi Version:
 
 Login als User pi:
-git clone https://github.com/codekoch/mediakit_RaspberryPi\n
-cd mediakitņ
-sudo ./install.sh\n
-sudo shutdown -r now\n
+
+git clone https://github.com/codekoch/mediakit_RaspberryPi
+
+cd mediakit_RaspebrryPi
+
+sudo ./install.sh
+
+sudo shutdown -r now
+
 
 
