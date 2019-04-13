@@ -14,6 +14,11 @@ function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
 
+if ! [ -e "/boot/berryboot.img" ] ; then
+red_msg "ERROR! mediakit can only be installed on a berryboot system!"
+yellow_msg "https://berryterminal.com/doku.php/berryboot"
+exit
+fi  
 green_msg "install and configure everything..."
 
 ######## install mediakit layout
@@ -39,7 +44,26 @@ yellow_msg "->install Fileupload"
 yellow_msg "->install FileBrowser"
 #### Guacamole clientless remote desktop
 yellow_msg "->install guacamole clientless remote desktop"
+#### activate ssh
 
+#### install x11VNC Server (disable real vnc server)
+
+#### install smb server
+
+######## install mediakit selfhealing abitily
+yellow_msg "-install mediakit selfhealing ability"
+
+######## install some useful programs
+yellow_msg "-install some useful programs"
+#### openboard
+#### python
+#### geogebra
+#### pinta
+#### java
+#### gparted
+#### ballerburg
+#### simplescreenrecorder
+#### youtube-dl
 
 
 green_msg "Done! A restart is necessary!"
