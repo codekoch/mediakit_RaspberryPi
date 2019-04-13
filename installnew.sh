@@ -34,6 +34,13 @@ yellow_msg "->install hotspot"
 ######## install miracast ability
 yellow_msg "-install miracast ability"
 
+######## install update ability
+yellow_msg "-install update ability"
+
+######## install startupscripts
+yellow_msg "-install startupscritps"
+
+
 ######## install server ability
 yellow_msg "-install server functions..."
 #### Workspace
