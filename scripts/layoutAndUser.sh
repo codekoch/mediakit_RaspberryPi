@@ -13,11 +13,11 @@ echo -e "\\033[33;1m${@}\033[0m"
 function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
-yellow_msg "Set password for user pi on mediakit (usually 'mediakitadmin'):"
+yellow_msg "->Set password for user pi on mediakit (usually 'mediakitadmin'):"
 passwd
 
 #### add user mk
-echo "add user mk..." 
+echo "->adding user mk..." 
 sudo adduser mk << EOF 
 mediakit
 mediakit
@@ -32,7 +32,7 @@ sudo mkdir /home/mk/.config
 sudo chown -R mk:mk /home/mk/.config
 
 #### setting up mediakit layout
-echo "copying layout files..."
+yellow_msg "->copying layout files..."
 #### menu launch button
 sudo cp sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
 
