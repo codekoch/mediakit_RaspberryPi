@@ -13,7 +13,8 @@ echo -e "\\033[33;1m${@}\033[0m"
 function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
-
+#### update package list
+sudo apt-get update
 #### install dnsmasq 
 sudo apt-get install dnsmasq
 #### install hostapd
@@ -21,8 +22,6 @@ sudo apt-get install hostapd
 
 #### install miracast ability 
 sudo cp -R sources/opt/lazycast /opt/
-sudo cp -R sources/opt/lazycast
-
 
 #### copy hotspot config files
 sudo cp -R sources/etc/hostapd /etc/ #### copy hostapd.conf,hostapd.conf.intern, hostapd.conf.usb

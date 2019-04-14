@@ -15,7 +15,7 @@ echo -e "\\033[34;1m${@}\033[0m"
 }
 
 ######## copy lightdm config file (autologin mk, display-setup-script start.sh, session-setup-script loginscript.sh)
-sudo cp /sources/etc/lightdm/lightdm.conf /etc/lightdm/
+sudo cp sources/etc/lightdm/lightdm.conf /etc/lightdm/
 
 
 ######### copying startupscripts
