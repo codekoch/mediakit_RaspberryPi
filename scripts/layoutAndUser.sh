@@ -26,10 +26,11 @@ mediakit
 Y
 EOF
 sudo mkdir /home/mk/.config
-sudo chown -R testuser:testuser /home/mk/.config
+sudo chown -R mk:mk /home/mk/.config
 
 #### setting up mediakit layout
 echo "copying layout files..."
+pwd
 #### menu launch button
 sudo cp ../sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
 #### splashscreen at startup
@@ -46,4 +47,4 @@ sudo cp -R ../sources/home/mk/Desktop /home/mk/
 #### copying all mediakit desktop icons
 sudo cp ../sources/usr/share/pixmaps/* /usr/share/pixmaps/
 
-sudo chown -R testuser:testuser /home/mk/*
+sudo chown -R mk:mk /home/mk/*
