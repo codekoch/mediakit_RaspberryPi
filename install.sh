@@ -21,6 +21,6 @@ echo "install and configure everything..."
 
 
 echo "copying every script to the right place..."
-sudo cp -R ./install/* /
+sudo cp -R ./sources/* /
 echo "done! A restart is necessary!"
 echo "sudo shutdown -r now" 

@@ -21,8 +21,9 @@ exit
 fi  
 green_msg "install and configure everything..."
 
-######## install mediakit layout
-yellow_msg "-install mediakit layout"
+######## install mediakit layout and user
+yellow_msg "-install mediakit layout and mediakit user"
+scripts/layoutAndUser.sh
 
 ######## install router ability
 yellow_msg "-install router ability"
