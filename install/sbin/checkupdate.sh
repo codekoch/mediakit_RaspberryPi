@@ -1,14 +1,14 @@
 #!/bin/bash
 ### Settings
-path="/tmp/data/FILES"
+path="/b/data/FILES"
 #path="/media/mk/berryboot/data/FILES"
 file="Mediakit.img256"
 server="http://images.mediakit.education"
-license="`cat /media/mk/boot/mediakit.lic`"
+license="`cat /a/mediakit.lic`"
 ###
 rm $path/update.txt
 ### check if Image exists on USB Stick
-dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
+dataDevice="`cat /a/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
 ### get usb-device-links
 mapfile -t usbLinks < <(ls /dev/disk/by-id | grep -i 'usb' | grep -v 'part')
 #usbLink=(`ls /dev/disk/by-id | grep -i 'usb' | grep -v 'part'`)
