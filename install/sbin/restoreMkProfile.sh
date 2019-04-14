@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo mount /dev/mmcblk0p1 /boot
+#sudo mount /dev/mmcblk0p1 /boot
 dataDevice="`cat /boot/cmdline.txt | awk -F'datadev=' '{print $2}' | awk '{print $1}'`"
 
 if [ $dataDevice = "sda2" ]; then
@@ -30,6 +30,7 @@ if [ -e /dev/mmcblk0p2 ]
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     sudo umount /dev/$dataDevice
     sudo umount /dev/mmcblk0p1
+    sudo mount /dev/mmcblk0p1 /boot
 else
     sudo mount /dev/$dataDevice /b
     sudo mount /dev/sda1 /a
@@ -40,5 +41,6 @@ else
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     sudo umount /dev/$dataDevice
     sudo umount /dev/sda1
+    sudo mount /dev/sda1 /boot
 fi
 
