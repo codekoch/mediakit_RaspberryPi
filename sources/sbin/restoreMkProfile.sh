@@ -27,8 +27,8 @@ if [ -e /dev/mmcblk0p1 ]
     sudo /sbin/checkupdate.sh
     sudo rm -R /b/data/Mediakit.img*/home/mk/* #Remove the mk folder.
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
-    if [ -d "/home/pi/mediakit_RaspberryPi" ]; then
-       sudo cp -R /home/pi/mediakit_RaspberryPi/sources/home/mk/* /home/mk/
+    if [ -d "/home/pi/backup/mk" ]; then
+       sudo cp -R /home/pi/backup/mk /home/
        sudo chown -R mk:mk /home/mk/* 
     fi  
     sudo umount /dev/$dataDevice
@@ -49,8 +49,8 @@ else
     sudo /sbin/checkupdate.sh
     sudo rm -R /b/data/Mediakit.img*/home/mk/* #Remove the mk folder.
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
-    if [ -d "/home/pi/mediakit_RaspberryPi" ]; then
-       sudo cp -R /home/pi/mediakit_RaspberryPi/sources/home/mk/* /home/mk/ 
+    if [ -d "/home/pi/backup/mk" ]; then
+       sudo cp -R /home/pi/backup/mk /home/
        sudo chown -R mk:mk /home/mk/* 
     fi 
     sudo umount /dev/$dataDevice
