@@ -32,19 +32,19 @@ sudo chown -R mk:mk /home/mk/.config
 echo "copying layout files..."
 pwd
 #### menu launch button
-sudo cp ../sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
+sudo cp sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
 #### splashscreen at startup
-sudo cp ../sources/usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/ 
+sudo cp sources/usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/ 
 #### show Version on splashscreen at startup
-sudo cp ../sources/usr/share/plymouth/themes/pix/pix.script /usr/share/plymouth/themes/pix/
+sudo cp sources/usr/share/plymouth/themes/pix/pix.script /usr/share/plymouth/themes/pix/
 #### desktop background (mediakit logo)
-sudo cp ../sources/usr/share/rpd-wallpaper/logo.jpg /usr/share/rpd-wallpaper/
+sudo cp sources/usr/share/rpd-wallpaper/logo.jpg /usr/share/rpd-wallpaper/
 #### desktop background (loading mediakit logo)
-sudo cp ../sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
+sudo cp sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
 #### all desktop settings and icon arrangements
-sudo cp -R ../sources/home/mk/.config/pcmanfm /home/mk/.config/
-sudo cp -R ../sources/home/mk/Desktop /home/mk/
+sudo cp -R sources/home/mk/.config/pcmanfm /home/mk/.config/
+sudo cp -R sources/home/mk/Desktop /home/mk/
 #### copying all mediakit desktop icons
-sudo cp ../sources/usr/share/pixmaps/* /usr/share/pixmaps/
+sudo cp sources/usr/share/pixmaps/* /usr/share/pixmaps/
 
 sudo chown -R mk:mk /home/mk/*
