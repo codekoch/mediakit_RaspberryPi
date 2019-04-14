@@ -13,7 +13,9 @@ echo -e "\\033[33;1m${@}\033[0m"
 function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
-sudo adduser mk << EOF
+#### add user mk
+echo "add user mk..." 
+sudo adduser mk << EOF 
 mediakit
 mediakit
 mediakit
@@ -23,4 +25,25 @@ mediakit
 
 Y
 EOF
+sudo mkdir /home/mk/.config
+sudo chown -R testuser:testuser /home/mk/.config
 
+#### setting up mediakit layout
+echo "copying layout files..."
+#### menu launch button
+sudo cp ../sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
+#### splashscreen at startup
+sudo cp ../sources/usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/ 
+#### show Version on splashscreen at startup
+sudo cp ../sources/usr/share/plymouth/themes/pix/pix.script /usr/share/plymouth/themes/pix/
+#### desktop background (mediakit logo)
+sudo cp ../sources/usr/share/rpd-wallpaper/logo.jpg /usr/share/rpd-wallpaper/
+#### desktop background (loading mediakit logo)
+sudo cp ../sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
+#### all desktop settings and icon arrangements
+sudo cp -R ../sources/home/mk/.config/pcmanfm /home/mk/.config/
+sudo cp -R ../sources/home/mk/Desktop /home/mk/
+#### copying all mediakit desktop icons
+sudo cp ../sources/usr/share/pixmaps/* /usr/share/pixmaps/
+
+sudo chown -R testuser:testuser /home/mk/*

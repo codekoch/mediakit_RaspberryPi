@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Block Internet
+Comment=Blockiert das Internet
+Icon=/usr/share/pixmaps/blockInternet.png
+Exec=/sbin/block.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;

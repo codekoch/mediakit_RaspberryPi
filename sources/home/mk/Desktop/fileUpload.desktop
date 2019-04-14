@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=File Upload
+Comment=Aktiviert das Hochladen von Dateien
+Icon=/usr/share/pixmaps/fileUpload.png
+Exec=/sbin/activateFileUpload.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;

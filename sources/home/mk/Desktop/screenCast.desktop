@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Screencast
+Comment=Aktiviert den Screencast von einem externen Geraet
+Icon=/usr/share/pixmaps/screencast.png
+Exec=/sbin/openscreencast.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;

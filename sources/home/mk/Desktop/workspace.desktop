@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Workspace
+Comment=Aktiviert das den Workspace
+Icon=/usr/share/pixmaps/workspace.png
+Exec=/sbin/activateWorkspace.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;

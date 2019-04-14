@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Screencast
+Comment=Aktiviert den Screencast von einem externen Geraet
+Icon=/usr/share/pixmaps/openboard.png
+Exec=/usr/bin/flatpak run ch.openboard.OpenBoard
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
+Name[en_GB]=OpenBoard
+Comment[en_GB]=Interaktives Whiteboard

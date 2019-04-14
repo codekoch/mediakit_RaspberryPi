@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Unblock Internet
+Comment=Gibt das Internet frei
+Icon=/usr/share/pixmaps/unblockInternet.png
+Exec=/sbin/unblock.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;

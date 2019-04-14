@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Filesharing
+Comment=Aktiviert das den FileBrowser
+Icon=/usr/share/pixmaps/share.png
+Exec=/sbin/activateFileBrowser.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
