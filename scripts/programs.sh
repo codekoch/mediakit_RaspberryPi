@@ -15,11 +15,11 @@ echo -e "\\033[34;1m${@}\033[0m"
 }
 
 ######## get latest updates and upgrades 
-sudo apt-get update
-sudo apt-get upgrade
+#sudo apt-get update
+#sudo apt-get upgrade
 
 ######## install needed programs
-sudo apt-get install zenity
-sudo apt-get install pinta
+sudo apt-get install -y zenity
+sudo apt-get install -y pinta
 ## pip, pymsgbox
 

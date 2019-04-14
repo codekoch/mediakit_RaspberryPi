@@ -30,7 +30,7 @@ Y
 EOF
 sudo mkdir /home/mk/.config
 sudo chown -R mk:mk /home/mk/.config
-
+echo " "
 #### setting up mediakit layout
 yellow_msg "->copying layout files..."
 #### menu launch button

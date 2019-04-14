@@ -16,9 +16,9 @@ echo -e "\\033[34;1m${@}\033[0m"
 #### update package list
 sudo apt-get update
 #### install dnsmasq 
-sudo apt-get install dnsmasq
+sudo apt-get install -y dnsmasq
 #### install hostapd
-sudo apt-get install hostapd
+sudo apt-get install -y hostapd
 
 #### install miracast ability 
 sudo cp -R sources/opt/lazycast /opt/
