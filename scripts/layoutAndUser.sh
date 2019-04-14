@@ -43,6 +43,8 @@ sudo cp sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
 #### all desktop settings and icon arrangements
 sudo cp -R sources/home/mk/.config/pcmanfm /home/mk/.config/
 sudo cp -R sources/home/mk/Desktop /home/mk/
+#### all lxpanel settings
+sudo cp -R sources/home/mk/.config/lxpanel /home/mk/.config/
 #### copying all mediakit desktop icons
 sudo cp sources/usr/share/pixmaps/* /usr/share/pixmaps/
 
