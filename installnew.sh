@@ -22,25 +22,19 @@ fi
 green_msg "install and configure everything..."
 
 ######## install mediakit layout and user
-yellow_msg "-install mediakit layout and mediakit user"
+yellow_msg "-install mediakit layout and mediakit user..."
 scripts/layoutAndUser.sh
 
-######## install router ability
-yellow_msg "-install router ability"
-#### Firewall settings
-yellow_msg "->install firewall settings"
-#### Hotspot
-yellow_msg "->install hotspot"
-
-######## install miracast ability
-yellow_msg "-install miracast ability"
+######## install router and miracast ability
+yellow_msg "-install router and miracast ability..."
+scripts/routerAndMiracast.sh
 
 ######## install update ability
-yellow_msg "-install update ability"
+yellow_msg "-install update ability..."
 
-######## install startupscripts
-yellow_msg "-install startupscritps"
-
+######## install startup and mediakit scripts
+yellow_msg "-install startup and mediakit scripts..."
+scripts/mediakitScripts.sh
 
 ######## install server ability
 yellow_msg "-install server functions..."
@@ -73,6 +67,9 @@ yellow_msg "-install some useful programs"
 #### simplescreenrecorder
 #### youtube-dl
 
+######## copying sudoers file to give all necessary rights to user mk
+yellow_msg "-copying sudoers file to give all necessary rights to user mk"
+sudo cp sources/etc/sudoers /etc/
 
 green_msg "Done! A restart is necessary!"
 green_msg "sudo shutdown -r now" 
