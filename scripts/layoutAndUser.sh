@@ -30,7 +30,6 @@ sudo chown -R mk:mk /home/mk/.config
 
 #### setting up mediakit layout
 echo "copying layout files..."
-pwd
 #### menu launch button
 sudo cp sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
 #### splashscreen at startup
