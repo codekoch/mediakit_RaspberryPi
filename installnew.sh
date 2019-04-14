@@ -57,6 +57,7 @@ yellow_msg "-install mediakit selfhealing ability"
 
 ######## install some useful programs
 yellow_msg "-install some useful programs"
+scripts/programs.sh
 #### openboard
 #### python
 #### geogebra

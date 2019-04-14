@@ -13,6 +13,9 @@ echo -e "\\033[33;1m${@}\033[0m"
 function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
+yellow_msg "Set password for user pi on mediakit (usually 'mediakitadmin'):"
+passwd
+
 #### add user mk
 echo "add user mk..." 
 sudo adduser mk << EOF 
@@ -32,20 +35,28 @@ sudo chown -R mk:mk /home/mk/.config
 echo "copying layout files..."
 #### menu launch button
 sudo cp sources/usr/share/raspberrypi-artwork/launch.png /usr/share/raspberrypi-artwork/ 
+
 #### splashscreen at startup
 sudo cp sources/usr/share/plymouth/themes/pix/splash.png /usr/share/plymouth/themes/pix/ 
-#### show Version on splashscreen at startup
+
+#### show mediakit version on splashscreen at startup
 sudo cp sources/usr/share/plymouth/themes/pix/pix.script /usr/share/plymouth/themes/pix/
+
 #### desktop background (mediakit logo)
 sudo cp sources/usr/share/rpd-wallpaper/logo.jpg /usr/share/rpd-wallpaper/
+
 #### desktop background (loading mediakit logo)
 sudo cp sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
+
 #### all desktop settings and icon arrangements
 sudo cp -R sources/home/mk/.config/pcmanfm /home/mk/.config/
 sudo cp -R sources/home/mk/Desktop /home/mk/
+
 #### all lxpanel settings
 sudo cp -R sources/home/mk/.config/lxpanel /home/mk/.config/
+
 #### copying all mediakit desktop icons
 sudo cp sources/usr/share/pixmaps/* /usr/share/pixmaps/
 
+#### give directories to user mk
 sudo chown -R mk:mk /home/mk/*

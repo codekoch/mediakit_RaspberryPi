@@ -19,7 +19,7 @@ sudo apt-get install dnsmasq
 #### install hostapd
 sudo apt-get install hostapd
 
-#### install miracast ability (see also scripts/mediakitScripts.sh restoreP2PWlan.sh)
+#### install miracast ability 
 sudo cp -R sources/opt/lazycast /opt/
 sudo cp -R sources/opt/lazycast
 
@@ -36,4 +36,5 @@ sudo cp sources/etc/dhcpcd.conf* /etc/ #### copy dhcpcd.conf,dhcpcd.conf.intern,
 #### wpa_supplicant config files  
 sudo cp sources/etc/wpa_supplicant/* /etc/wpa_supplicant/ #### copy wpa_supplicant.conf, wpa_supplicant.conf.normal
 
-
+######## see also scripts/mediakitScripts.sh start.sh, info.sh, restoreMKProfile.sh, restoreP2PWlan.sh, randomWifi.sh 
+######## these scripts interact with mediakits miracast and hotspot ability

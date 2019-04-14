@@ -47,3 +47,26 @@ sudo cp sources/sbin/checkupdate.sh /sbin/
 #### copy bootIntoUpdate.sh which is called by checkupdate.sh and restarts and boot into berryboot update.img file 
 sudo cp sources/sbin/bootIntoUpdate.sh /sbin/
 
+
+######### install ability to block/unblock internet connection for wlan devices connected to the mediakit
+
+#### copy block.sh which calls python program block.py
+sudo cp sources/sbin/block.sh /sbin/
+
+#### copy block.py which calls blockInternet.sh for choosen IPs
+sudo cp sources/sbin/block.py /sbin/
+
+#### copy blockInternet.sh which blocks outgoing traffic for choosen IPs by iptables config
+sudo cp sources/sbin/blockInternet.sh /sbin/
+
+#### copy unblock.sh which calls python program unblock.py
+sudo cp sources/sbin/unblock.sh /sbin/
+
+#### copy unblock.py which calls unblockInternet.sh for choosen IPs
+sudo cp sources/sbin/unblock.py /sbin/
+
+#### copy unblockInternet.sh which unblocks outgoing traffic for choosen IPs by iptables config
+sudo cp sources/sbin/unblockInternet.sh /sbin/
+
+
+
