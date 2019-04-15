@@ -57,3 +57,6 @@ sudo cp sources/sbin/activateFileUpload.sh /sbin/
 sudo cp sources/sbin/startnode.sh /sbin/
 sudo cp -R sources/opt/mkServer /opt/
 sudo chmod -R 755 /opt/mkServer
+sudo mkdir /home/mk/Uploads
+sudo chown mk:mk /home/mk/Uploads
+
