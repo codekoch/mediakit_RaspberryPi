@@ -27,8 +27,8 @@ sudo cp -R sources/opt/lazycast /opt/
 sudo cp -R sources/etc/hostapd /etc/ #### copy hostapd.conf,hostapd.conf.intern, hostapd.conf.usb
 sudo cp sources/etc/default/hostapd /etc/default/ #### Defaults for hostapd initscript
 
-#### hostapd aktivieren
-sudo systemctl enable hostapd
+#### unmask hostapd.service, it seems to be necessary ;-) 
+sudo systemctl unmask hostapd.service
 
 #### copy dnsmasq config files
 sudo cp sources/etc/dnsmasq.conf* /etc/ #### copy dnsmasq.conf,dnsmasq.conf.intern, dnsmasq.conf.usb, dnsmasq.conf.normal

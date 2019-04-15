@@ -1,5 +1,4 @@
 #!/bin/sh
-sleep 1
 sudo /sbin/restoreMkProfile.sh
 #sudo service smbd stop
 #sudo service nmbd stop
