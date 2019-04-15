@@ -22,6 +22,7 @@ sudo apt-get install -y hostapd
 
 #### install miracast ability 
 sudo cp -R sources/opt/lazycast /opt/
+sudo chmod -R 755 /opt/lazycast
 
 #### copy hotspot config files
 sudo cp -R sources/etc/hostapd /etc/ #### copy hostapd.conf,hostapd.conf.intern, hostapd.conf.usb
