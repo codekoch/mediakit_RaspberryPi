@@ -1,0 +1,1 @@
+Every device connected via wlan can use this directory as Fileserver if workspace is activated 

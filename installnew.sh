@@ -38,6 +38,8 @@ scripts/mediakitScripts.sh
 
 ######## install server ability
 yellow_msg "-install server functions..."
+scripts/server.sh
+
 #### Workspace
 yellow_msg "->install Workspace"
 #### Fileupload
