@@ -25,6 +25,10 @@ sudo cp -R sources/opt/lazycast /opt/
 
 #### copy hotspot config files
 sudo cp -R sources/etc/hostapd /etc/ #### copy hostapd.conf,hostapd.conf.intern, hostapd.conf.usb
+sudo cp sources/etc/default/hostapd /etc/default/ #### Defaults for hostapd initscript
+
+#### hostapd aktivieren
+sudo systemctl enable hostapd
 
 #### copy dnsmasq config files
 sudo cp sources/etc/dnsmasq.conf* /etc/ #### copy dnsmasq.conf,dnsmasq.conf.intern, dnsmasq.conf.usb, dnsmasq.conf.normal
@@ -34,6 +38,9 @@ sudo cp sources/etc/dhcpcd.conf* /etc/ #### copy dhcpcd.conf,dhcpcd.conf.intern,
 
 #### wpa_supplicant config files  
 sudo cp sources/etc/wpa_supplicant/* /etc/wpa_supplicant/ #### copy wpa_supplicant.conf, wpa_supplicant.conf.normal
+
+#### network interfaces config files
+sudo cp sources/etc/network/* /etc/network/ #### copy interfaces, interfaces.intern, interfaces.normal, interfaces.usb
 
 ######## see also scripts/mediakitScripts.sh start.sh, info.sh, restoreMKProfile.sh, restoreP2PWlan.sh, randomWifi.sh 
 ######## these scripts interact with mediakits miracast and hotspot ability
