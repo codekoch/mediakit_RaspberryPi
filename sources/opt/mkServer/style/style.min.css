@@ -1,0 +1,36 @@
+/* server/static/style.min.css */ 
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper > form {
+  display: flex;
+  width: 20em;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#upload {
+  display:none;
+}
+
+[for="upload"] {
+  display: block;
+  width: 18em;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: .2em;
+  text-align: center;
+  color: white;
+  background-color: deepskyblue;
+  font-weight: bold;
+}

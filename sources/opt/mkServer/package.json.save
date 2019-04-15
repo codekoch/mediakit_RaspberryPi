@@ -1,0 +1,9 @@
+// package.json
+{
+  "name": "upload-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon ./server/index.js"
+  },
+ ...
+}

@@ -34,6 +34,26 @@ sudo cp sources/sbin/startWorkspace.sh /sbin/
 
 #### copy node-file-manager script which calls node-file-manager 
 sudo cp sources/usr/bin/node-file-manager /usr/bin/
+sudo chmod 755 /usr/bin/node-file-manager
 
 #### copy node-file-manager  
 sudo cp -R sources/usr/lib/node_modules/node-file-manager /usr/lib/node_modules/
+sudo chmod -R 755 /usr/lib/node_modules/node-file-manager
+
+######## install FileBrowser ability
+
+#### copy activateFileBrowser.sh which calls startFileBrowser.sh and stops running nodejs servers by calling stopMkServer.sh and s$
+sudo cp sources/sbin/activateFileBrowser.sh /sbin/
+
+#### copy startFileBrowser.sh which calls file-Browser script
+sudo cp sources/sbin/startFileBrowser.sh /sbin/
+
+#### copy file-browser script 
+sudo cp sources/usr/bin/file-browser /usr/bin/
+sudo chmod 755 /usr/bin/file-browser
+
+######## install FileUpload
+sudo cp sources/sbin/activateFileUpload.sh /sbin/
+sudo cp sources/sbin/startnode.sh /sbin/
+sudo cp -R sources/opt/mkServer /opt/
+sudo chmod -R 755 /opt/mkServer

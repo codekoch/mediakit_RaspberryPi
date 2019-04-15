@@ -20,6 +20,7 @@ echo -e "\\033[34;1m${@}\033[0m"
 
 ######## install needed programs
 sudo apt-get install -y imagemagick
+sudo apt-get install -y qrencode
 # sudo apt-get install -y zenity
 # sudo apt-get install -y pinta
 # openboard
