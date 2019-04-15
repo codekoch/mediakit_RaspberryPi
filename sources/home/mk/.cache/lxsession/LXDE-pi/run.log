@@ -1,0 +1,344 @@
+** Message: environement.vala:58: Exporting primary_variable
+** Message: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:150: confir_dirs is null, export : /etc/xdg
+** Message: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:218: custom_data :
+** Message: environement.vala:219: data_dirs :/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:220: data_dirs not null, export : /usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+
+** (lxsession:1335): WARNING **: utils.vala:70: No such file or directory
+** Message: settings.vala:540: Key file does not have key 'iGtk/ColorScheme' in group 'GTK'
+** Message: settings.vala:540: Key file does not have key 'windows_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'panel/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'dock/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'file_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'desktop_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'launcher_manager/autostart' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'composite_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'im1/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'im2/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'widget1/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'notification/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'keybindings/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'im_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'screensaver/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'power_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'audio_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'workspace_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'screenshot_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'message_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'upgrade_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'updates_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'updates_manager/timeout' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'crash_manager/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'crash_manager/dev_mode' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'crash_manager/timeout' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'upstart_user_session' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'proxy_manager/http' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'a11y/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'xrandr/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'network_gui/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'webbrowser/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'email/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'pdf_reader/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'video_player/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'audio_player/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'images_display/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'text_editor/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'archive/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'charmap/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'calculator/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'spreadsheet/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'bittorent/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'document/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'webcam/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'burn/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'notes/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'disk_utility/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have key 'tasks/command' in group 'Session'
+** Message: settings.vala:540: Key file does not have group 'Keymap'
+** Message: settings.vala:540: Key file does not have key 'laptop_mode' in group 'State'
+** Message: settings.vala:540: Key file does not have key 'gnome' in group 'Dbus'
+** Message: settings.vala:540: Key file does not have key 'type' in group 'Environment'
+** Message: settings.vala:540: Key file does not have key 'ubuntu_menuproxy' in group 'Environment'
+** Message: settings.vala:540: Key file does not have key 'toolkit_integration' in group 'Environment'
+** Message: settings.vala:540: Key file does not have key 'gtk/overlay_scrollbar_disable' in group 'Environment'
+** Message: settings.vala:540: Key file does not have key 'qt/force_theme' in group 'Environment'
+** Message: settings.vala:540: Key file does not have key 'qt/platform' in group 'Environment'
+** Message: settings.vala:462: Monitoring: /etc/xdg/lxsession/LXDE-pi/desktop.conf
+** Message: settings.vala:470: Desktop file is not in config home, monitoring creation of it
+** Message: settings.vala:485: Monitoring home path: /home/mk/.config/lxsession/LXDE-pi/desktop.conf
+** Message: environement.vala:79: Exporting variable
+** Message: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:177: custom_config :
+** Message: environement.vala:178: config_dirs :/etc/xdg
+** Message: environement.vala:179: confir_dirs not null, export : /etc/xdg
+** Message: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:218: custom_data :
+** Message: environement.vala:219: data_dirs :/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:220: data_dirs not null, export : /usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+
+** (lxsession:1335): WARNING **: utils.vala:70: No such file or directory
+** Message: environement.vala:254: No entry in [Environment_variable]. Key file does not have group 'Environment_variable'
+** Message: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/conffiles.conf
+** Message: options.vala:164: Activate xsettings_manager build-in
+** Message: utils.vala:39: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:45: System system path location : /etc/xdg/lxsession/LXDE-pi/desktop.conf
+
+** (lxsession:1335): WARNING **: utils.vala:70: No such file or directory
+xprop:  no such property "_NET_NUMBER_OF_DESKTOPS"
+xprop:  no such property "_NET_DESKTOP_NAMES"
+** Message: app.vala:721: polkit separate
+** Message: app.vala:721: polkit separate
+** Message: app.vala:76: Launching lxpolkit 
+** Message: utils.vala:138: Config system location : /etc/xdg/lxsession/LXDE-pi
+** Message: utils.vala:144: System system path location : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: utils.vala:148: Final file used : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: autostart.vala:42: Autostart path : /etc/xdg/lxsession/LXDE-pi/autostart
+** Message: app.vala:76: Launching lxpanel 
+** Message: app.vala:76: Launching pcmanfm 
+
+** (lxsession:1335): WARNING **: app.vala:86: Failed to execute child process "xscreensaver" (No such file or directory)
+
+** (lxsession:1335): WARNING **: app.vala:87: Error when launching xscreensaver
+** Message: app.vala:76: Launching point-rpi 
+** Message: options.vala:107: Create build-in Clipboard
+** Message: main.vala:442: Check keymap_mode (null)
+** Message: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-yqiuFuoMY1U0/agent.1431; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=1434; export SSH_AGENT_PID;
+echo Agent pid 1434;
+** Message: x-terminal-emulator has very limited support, consider choose another terminal
+** Message: app.vala:130: point-rpi exit with this type of exit: 0
+** Message: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+** Message: x-terminal-emulator has very limited support, consider choose another terminal
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+** Message: Connecting ...
+** Message: Status changed to down
+
+** (lxpanel:1418): CRITICAL **: dhcpcd_open: Inappropriate ioctl for device
+** Message: bt: Name org.bluez owned on DBus
+** Message: bt: New agent manager found
+** Message: bt: New adapter found
+** Message: va: Name org.bluez owned on DBus
+
+** (lxpanel:1418): WARNING **: launchbar: desktop entry does not exist
+** Message: Status changed to opened
+** Message: Connected to dhcpcd-6.11.5
+** Message: Status changed to connected
+** Message: eth0: CARRIER
+** Message: eth0: Configured 192.168.1.50/24
+** Message: wlan0: Not associated
+** Message: wlan1: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+Selected interface 'p2p-dev-wlan0'
+OK
+
+
+OK
+** Message: p2p-wlan0-0: PREINIT
+** Message: p2p-wlan0-0: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-0: Departed
+OK
+** Message: p2p-wlan0-1: PREINIT
+** Message: p2p-wlan0-1: Not associated
+** Message: p2p-wlan0-1: Associated with
+** Message: p2p-wlan0-1: Not associated
+** Message: p2p-wlan0-1: Associated with
+** Message: p2p-wlan0-1: Not associated
+** Message: p2p-wlan0-1: Associated with
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-1: Not associated
+** Message: p2p-wlan0-1: Departed
+OK
+** Message: p2p-wlan0-2: PREINIT
+** Message: p2p-wlan0-2: Not associated
+** Message: p2p-wlan0-2: Associated with
+** Message: p2p-wlan0-2: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-2: Departed
+OK
+** Message: p2p-wlan0-3: PREINIT
+** Message: p2p-wlan0-3: Not associated
+** Message: p2p-wlan0-3: Departed
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+OK
+** Message: p2p-wlan0-4: PREINIT
+** Message: p2p-wlan0-4: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-4: Departed
+OK
+** Message: p2p-wlan0-5: PREINIT
+** Message: p2p-wlan0-5: Not associated
+** Message: p2p-wlan0-5: Associated with
+** Message: p2p-wlan0-5: Not associated
+** Message: p2p-wlan0-5: Associated with
+** Message: p2p-wlan0-5: Not associated
+** Message: p2p-wlan0-5: Associated with
+** Message: p2p-wlan0-5: Not associated
+** Message: p2p-wlan0-5: Departed
+Selected interface 'p2p-wlan0-5'
+Available interfaces:
+'INTERFACES' command timed out.
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+OK
+** Message: p2p-wlan0-6: PREINIT
+** Message: p2p-wlan0-6: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-6: Departed
+OK
+** Message: p2p-wlan0-7: PREINIT
+** Message: p2p-wlan0-7: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-7: Departed
+OK
+** Message: p2p-wlan0-8: PREINIT
+** Message: p2p-wlan0-8: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-8: Departed
+OK
+** Message: p2p-wlan0-9: PREINIT
+** Message: p2p-wlan0-9: Not associated
+** Message: p2p-wlan0-9: Associated with
+** Message: p2p-wlan0-9: Not associated
+** Message: p2p-wlan0-9: Associated with
+** Message: p2p-wlan0-9: Not associated
+** Message: p2p-wlan0-9: Departed
+Selected interface 'p2p-wlan0-9'
+Available interfaces:
+'INTERFACES' command timed out.
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+OK
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-10: PREINIT
+OK
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-10: Not associated
+** Message: p2p-wlan0-10: Departed
+OK
+** Message: p2p-wlan0-11: PREINIT
+** Message: p2p-wlan0-11: Not associated
+** Message: p2p-wlan0-11: Departed
+** Message: p2p-wlan0-12: PREINIT
+** Message: p2p-wlan0-12: Not associated
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+** Message: p2p-wlan0-12: Associated with
+** Message: p2p-wlan0-12: Not associated
+** Message: p2p-wlan0-12: Departed
+OK
+Selected interface 'p2p-dev-wlan0'
+Available interfaces:
+p2p-dev-wlan0
+wlan0
+OK
+** Message: p2p-wlan0-13: PREINIT
+** Message: p2p-wlan0-13: Not associated
+** Message: p2p-wlan0-13: Departed
+** Message: p2p-wlan0-14: PREINIT
+** Message: p2p-wlan0-14: Associated with DIRECT-sM
+** Message: p2p-wlan0-14: Disassociated from DIRECT-sM
+** Message: p2p-wlan0-14: Associated with DIRECT-sM
+** Message: p2p-wlan0-14: Disassociated from DIRECT-sM
+** Message: p2p-wlan0-14: Associated with DIRECT-sM
+Selected interface 'p2p-wlan0-14'
+Available interfaces:
+p2p-wlan0-14
+p2p-dev-wlan0
+wlan0
+Selected interface 'p2p-wlan0-14'
+Available interfaces:
+p2p-wlan0-14
+p2p-dev-wlan0
+wlan0
+net.ipv4.ip_forward = 1
+net.ipv6.conf.all.forwarding = 1
+PIN:
+** Message: wlan1: Associated with MK-b827eb4900c3
+** Message: wlan1: Configured 1.1.1.1/24
+94200000
+** Message: p2p-wlan0-14: Configured 169.254.242.183/16
+PIN:
+94200000
+PIN:
+94200000
+PIN:
+94200000
+PIN:
+94200000
+lxterminal
+
+** (lxterminal:3711): WARNING **: Configuration file create failed: No such file or directory
+
+PIN:
+94200000
+lxterminal
+PIN:
+94200000
+PIN:
+94200000

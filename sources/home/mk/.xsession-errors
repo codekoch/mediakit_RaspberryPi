@@ -1,0 +1,57 @@
+Xsession: X session started for mk at Mon 15 Apr 09:35:01 BST 2019
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/mk/.Xauthority
+localuser:mk being added to access control list
+Can't save user-dirs.dirs
+
+Wi-Fi is disabled because the country is not set.
+Use raspi-config to set the country before use.
+
+OpenGL version: 3.
+dbus-update-activation-environment: setting INFINALITY_FT_AUTOHINT_HORIZONTAL_STEM_DARKEN_STRENGTH=10
+dbus-update-activation-environment: setting USER=mk
+dbus-update-activation-environment: setting INFINALITY_FT_FRINGE_FILTER_STRENGTH=0
+dbus-update-activation-environment: setting TEXTDOMAIN=Linux-PAM
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/mk
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting INFINALITY_FT_CONTRAST=0
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting INFINALITY_FT_USE_VARIOUS_TWEAKS=true
+dbus-update-activation-environment: setting INFINALITY_FT_GAMMA_CORRECTION=0 100
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+dbus-update-activation-environment: setting INFINALITY_FT_WINDOWS_STYLE_SHARPENING_STRENGTH=10
+dbus-update-activation-environment: setting INFINALITY_FT_STEM_ALIGNMENT_STRENGTH=25
+dbus-update-activation-environment: setting LOGNAME=mk
+dbus-update-activation-environment: setting INFINALITY_FT_AUTOHINT_VERTICAL_STEM_DARKEN_STRENGTH=25
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1001
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting INFINALITY_FT_GLOBAL_EMBOLDEN_X_VALUE=0
+dbus-update-activation-environment: setting LANG=en_GB.UTF-8
+dbus-update-activation-environment: setting INFINALITY_FT_AUTOHINT_SNAP_STEM_HEIGHT=100
+dbus-update-activation-environment: setting INFINALITY_FT_GLOBAL_EMBOLDEN_Y_VALUE=0
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting XAUTHORITY=/home/mk/.Xauthority
+dbus-update-activation-environment: setting INFINALITY_FT_CHROMEOS_STYLE_SHARPENING_STRENGTH=0
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/mk
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting NO_AT_BRIDGE=1
+dbus-update-activation-environment: setting INFINALITY_FT_BRIGHTNESS=0
+dbus-update-activation-environment: setting INFINALITY_FT_STEM_FITTING_STRENGTH=25
+dbus-update-activation-environment: setting INFINALITY_FT_STEM_SNAPPING_SLIDING_SCALE=40
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1001/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting INFINALITY_FT_USE_KNOWN_SETTINGS_ON_SELECTED_FONTS=true
+dbus-update-activation-environment: setting INFINALITY_FT_GRAYSCALE_FILTER_STRENGTH=0
+dbus-update-activation-environment: setting PWD=/home/mk
+dbus-update-activation-environment: setting INFINALITY_FT_AUTOHINT_INCREASE_GLYPH_HEIGHTS=true
+dbus-update-activation-environment: setting INFINALITY_FT_FILTER_PARAMS=11 22 38 22 11
+dbus-update-activation-environment: setting INFINALITY_FT_BOLD_EMBOLDEN_X_VALUE=0
+dbus-update-activation-environment: setting INFINALITY_FT_BOLD_EMBOLDEN_Y_VALUE=0
+** Message: main.vala:102: Session is LXDE-pi
+** Message: main.vala:103: DE is LXDE
+** Message: main.vala:134: log directory: /home/mk/.cache/lxsession/LXDE-pi
+** Message: main.vala:135: log path: /home/mk/.cache/lxsession/LXDE-pi/run.log

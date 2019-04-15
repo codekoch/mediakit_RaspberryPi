@@ -1,0 +1,1520 @@
+1.2
+lxde-pi-applications.menu+hidden
+16
+D/home/mk/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/raspi-ui-overrides/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/mk/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/raspi-ui-overrides/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/mk/.config/menus/applications-merged
+F/home/mk/.config/menus/lxde-pi-applications.menu
+F/etc/xdg/menus/lxde-pi-applications.menu
+MATE;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+3
+0
++Development
+Programming
+Tools for software development
+applications-development
+lxde-development.directory
+3
+0
+-bluej.desktop
+BlueJ Java IDE
+A simple powerful Java IDE
+bluej
+
+8
+
+bluej
+0
+0
+bluej
+
+Application;Development
+
+-geany.desktop
+Geany Programmer's Editor
+A fast and lightweight IDE using GTK2
+geany
+
+8
+Integrated Development Environment
+geany %F
+2
+0
+geany
+
+GTK;Development;IDE
+
+-greenfoot.desktop
+Greenfoot Java IDE
+A simple Java IDE and animation framework
+greenfoot
+
+8
+
+greenfoot
+0
+0
+greenfoot
+
+Application;Development
+
+-idle-python2.7.desktop
+IDLE (using Python-2.7)
+Integrated Development Environment for Python (using Python-2.7)
+python
+
+8
+
+/usr/bin/idle-python2.7
+6
+0
+
+
+Application;Development
+
+-idle-python3.2.desktop
+IDLE (using Python-3.2)
+Integrated Development Environment for Python (using Python-3.2)
+python
+
+8
+
+/usr/bin/idle-python3.2
+6
+0
+
+
+Application;Development
+
+-idle-python3.4.desktop
+IDLE (using Python-3.4)
+Integrated Development Environment for Python (using Python-3.4)
+python
+
+8
+
+/usr/bin/idle-python3.4
+6
+0
+
+
+Application;Development
+
+-idle-python3.5.desktop
+IDLE (using Python-3.5)
+Integrated Development Environment for Python (using Python-3.5)
+python
+
+8
+
+/usr/bin/idle-python3.5
+6
+0
+
+
+Application;Development
+
+-wolfram-mathematica.desktop
+Mathematica
+Technical Computing System
+wolfram-mathematica
+
+9
+
+mathematica %F
+2
+0
+
+
+Application;Development
+
+-Node-RED.desktop
+Node-RED
+Flow based application composer for the Internet of Things
+/usr/share/icons/hicolor/scalable/apps/node-red-icon.svg
+
+9
+
+node-red-start
+1
+0
+
+
+Development
+
+-idle.desktop
+Python 2 (IDLE)
+Integrated development environment for Python 2
+python
+
+8
+
+/usr/bin/idle
+6
+0
+/usr/bin/idle
+
+Application;Development
+
+-idle3.desktop
+Python 3 (IDLE)
+Integrated development environment for Python 3
+python
+
+8
+
+/usr/bin/idle3
+2
+0
+/usr/bin/idle3
+
+Application;Development
+
+-python2.7.desktop
+Python (v2.7)
+Python Interpreter (v2.7)
+/usr/share/pixmaps/python2.7.xpm
+
+9
+
+/usr/bin/python2.7
+7
+0
+
+
+Development
+
+-python3.5.desktop
+Python (v3.5)
+Python Interpreter (v3.5)
+/usr/share/pixmaps/python3.5.xpm
+
+9
+
+/usr/bin/python3.5
+7
+0
+
+
+Development
+
+-scratch.desktop
+Scratch
+Programming system and content development tool
+scratch
+
+8
+
+scratch
+0
+0
+scratch
+
+Application;Development
+
+-scratch2.desktop
+Scratch 2
+Scratch 2 programming environment
+scratch2
+
+9
+
+/usr/bin/scratch2
+0
+0
+/usr/lib/electron/electron
+
+Application;Development
+
+-sense_emu_gui.desktop
+Sense HAT Emulator
+GUI for controlling the emulated Sense HAT
+sense_emu_gui
+
+9
+
+sense_emu_gui
+2
+0
+
+
+Development
+
+-sonic-pi.desktop
+Sonic Pi
+Learn programming and computer science while creating music
+/usr/share/pixmaps/sonic-pi.png
+
+9
+
+sonic-pi
+0
+0
+
+
+Application;Development
+
+-squeak.desktop
+Squeak
+Programming system and content development tool
+/usr/share/pixmaps/squeak.png
+
+8
+
+squeak
+4
+0
+squeak
+
+Application;Education;Development
+
+-Thonny.desktop
+Thonny Python IDE
+Python IDE for beginners
+thonny
+
+9
+Python IDE
+/usr/bin/thonny %F
+2
+0
+
+
+Application;Development
+
+-wolfram-language.desktop
+Wolfram
+Technical Programming Environment
+wolfram-language
+
+9
+
+x-terminal-emulator -t "Wolfram Language" -e wolfram
+2
+0
+
+
+Application;Development
+
+
++Education
+Education
+
+applications-science
+lxde-education.directory
+3
+0
+-smartsim.desktop
+SmartSim
+A digital logic circuit design and simulation package
+smartsim
+
+9
+SmartSim
+smartsim
+2
+-11
+
+
+Education
+
+-squeak.desktop
+Squeak
+Programming system and content development tool
+/usr/share/pixmaps/squeak.png
+
+8
+
+squeak
+4
+0
+squeak
+
+Application;Education;Development
+
+
++Office
+Office
+Office Applications
+applications-office
+lxde-office.directory
+3
+0
+-evince.desktop
+Document Viewer
+View multi-page documents
+evince
+
+8
+
+evince %U
+6
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,presentation
+-libreoffice-startcenter.desktop
+LibreOffice
+The office productivity suite compatible to the open and standardised ODF document format. Supported by The Document Foundation.
+libreoffice-startcenter
+
+8
+Office
+libreoffice %U
+6
+0
+
+
+Office;X-Red-Hat-Base;X-SuSE-Core-Office;X-MandrivaLinux-Office-Other
+
+-libreoffice-base.desktop
+LibreOffice Base
+Manage databases, create queries and reports to track and manage your information using Base.
+libreoffice-base
+
+9
+Database Development
+libreoffice --base %U
+2
+0
+
+
+Office;Database
+Data,SQL
+-libreoffice-calc.desktop
+LibreOffice Calc
+Perform calculations, analyse information and manage lists in spreadsheets using Calc.
+libreoffice-calc
+
+9
+Spreadsheet
+libreoffice --calc %U
+2
+0
+
+
+Office;Spreadsheet
+Accounting,Stats,OpenDocument Spreadsheet,Chart,Microsoft Excel,Microsoft Works,OpenOffice Calc,ods,xls,xlsx
+-libreoffice-draw.desktop
+LibreOffice Draw
+Create and edit drawings, flow charts and logos using Draw.
+libreoffice-draw
+
+8
+Drawing Program
+libreoffice --draw %U
+2
+0
+libreoffice
+
+Office;FlowChart;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Corel Draw,cdr,odg,svg
+-libreoffice-impress.desktop
+LibreOffice Impress
+Create and edit presentations for slideshows, meeting and Web pages using Impress.
+libreoffice-impress
+
+9
+Presentation
+libreoffice --impress %U
+2
+0
+
+
+Office;Presentation
+Slideshow,Slides,OpenDocument Presentation,Microsoft PowerPoint,Microsoft Works,OpenOffice Impress,odp,ppt,pptx
+-libreoffice-math.desktop
+LibreOffice Math
+Create and edit scientific formulae and equations using Math.
+libreoffice-math
+
+8
+Formula Editor
+libreoffice --math %U
+2
+0
+libreoffice
+
+Office;Spreadsheet;Science;Math
+Equation,OpenDocument Formula,Formula,odf,MathML
+-libreoffice-writer.desktop
+LibreOffice Writer
+Create and edit text and images in letters, reports, documents and Web pages using Writer.
+libreoffice-writer
+
+9
+Word Processor
+libreoffice --writer %U
+2
+0
+
+
+Office;WordProcessor
+Text,Letter,Fax,Document,OpenDocument Text,Microsoft Word,Microsoft Works,Lotus WordPro,OpenOffice Writer,CV,odt,doc,docx,rtf
+
++Internet
+Internet
+Programs for Internet access such as web and e-mail
+applications-internet
+lxde-network.directory
+3
+0
+-chromium-browser.desktop
+Chromium Web Browser
+Access the Internet
+chromium-browser
+
+9
+Web Browser
+chromium-browser %U
+2
+0
+
+
+Network;WebBrowser
+
+-claws-mail.desktop
+Claws Mail
+Lightweight and Fast GTK+ based Mail Client
+mail
+
+8
+E-mail client
+claws-mail %u
+2
+0
+claws-mail
+
+Network;Email
+lightweight,fast,gui,extensible,plugin,pop,pop3,imap,imap4,nntp,news
+-dillo.desktop
+Dillo
+Lightweight browser
+dillo
+
+8
+Web Browser
+dillo
+4
+0
+dillo
+
+Application;Network
+
+-epiphany-browser.desktop
+Epiphany Web Browser
+Browse the Web
+web-browser
+
+8
+Web Browser
+epiphany-browser %U
+6
+0
+epiphany-browser
+
+Network;GNOME;GTK;WebBrowser
+web,browser,internet
+-epiphany-newtab.desktop
+Epiphany Web Browser
+Browse the Web
+web-browser
+
+8
+Web Browser
+epiphany-browser -n %U
+6
+0
+epiphany-browser
+
+Network;GNOME;GTK;WebBrowser
+web,browser,internet
+-netsurf-gtk.desktop
+NetSurf Web Browser
+Browse the World Wide Web
+netsurf.png
+
+8
+Web Browser
+netsurf-gtk %u
+6
+0
+netsurf-gtk
+
+Network
+
+-realvnc-vnclicensehelper.desktop
+VNC License Helper
+Install a VNC license key
+/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+
+9
+VNC License
+vnclicensehelper -key %f
+4
+0
+
+
+Application;Network;RemoteAccess
+
+-realvnc-vncviewer.desktop
+VNC Viewer
+Connect to computers running VNC Server
+/usr/share/icons/hicolor/48x48/apps/vncviewer48x48.png
+
+9
+VNC Viewer
+vncviewer %f
+0
+0
+
+
+Application;Network;RemoteAccess
+
+-epiphany.desktop
+Web
+Browse the Web
+web-browser
+
+8
+Web Browser
+epiphany %U
+6
+0
+
+
+Network;GNOME;GTK;WebBrowser
+web,browser,internet
+-lxde-x-www-browser.desktop
+Web Browser
+
+applications-internet
+
+8
+X Web Browser
+/usr/bin/x-www-browser %u
+4
+0
+/usr/bin/x-www-browser
+
+GTK;WebBrowser;Network
+
+
++Multimedia
+Sound & Video
+Multimedia menu
+applications-multimedia
+lxde-audio-video.directory
+3
+0
+-mpv.desktop
+mpv Media Player
+Play movies and songs
+mpv
+
+8
+Multimedia player
+mpv --player-operation-mode=pseudo-gui -- %U
+4
+0
+mpv
+
+AudioVideo;Audio;Video;Player;TV
+mpv,media,player,video,audio,tv
+-qjackctl.desktop
+QjackCtl
+QjackCtl is a JACK Audio Connection Kit Qt GUI Interface
+qjackctl
+
+8
+JACK Control
+/usr/bin/qjackctl
+4
+0
+
+
+Audio;AudioVideo;Midi;X-Alsa;X-Jack;Qt
+audio,sound,jackd
+-SuperColliderIDE.desktop
+SuperCollider IDE
+
+sc_ide
+
+8
+SuperCollider IDE
+scide %f
+4
+0
+
+
+Application;Multimedia;Audio;AudioVideo
+
+-vlc.desktop
+VLC Media Player
+Multimedia player for audio and video files and streams
+vlc
+
+8
+Media player
+/usr/bin/vlc --started-from-file %U
+0
+0
+/usr/bin/vlc
+
+AudioVideo;Player;Recorder
+Player,Capture,DVD,Audio,Video,Server,Broadcast
+
++Graphics
+Graphics
+Graphics applications
+applications-graphics
+lxde-graphics.directory
+3
+0
+-evince.desktop
+Document Viewer
+View multi-page documents
+evince
+
+8
+
+evince %U
+6
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,presentation
+-display-im6.q16.desktop
+ImageMagick (color depth=q16)
+Display and edit image files
+display-im6.q16
+
+9
+
+/usr/bin/display-im6.q16 -nostdin %F
+0
+0
+
+
+Graphics
+Image,Slideshow,View,Transform,Enhance,F/X,Special Effects
+-gpicview.desktop
+Image Viewer
+View your images easily
+gpicview
+
+8
+Image Viewer
+gpicview %f
+2
+0
+gpicview
+
+Graphics;Core;GTK;Viewer;RasterGraphics;2DGraphics;Photography
+
+
++Games
+Games
+Games and Amusements
+applications-games
+lxde-game.directory
+3
+0
+-minecraft-pi.desktop
+Minecraft Pi
+Fun with Blocks
+/usr/share/pixmaps/minecraft-pi.png
+
+8
+
+minecraft-pi
+2
+0
+minecraft-pi
+
+Application;Game
+
+-python-games.desktop
+Python Games
+Examples of games written in Python
+python
+
+9
+
+sh -c /usr/share/python_games/launcher.sh
+2
+0
+/usr/share/python_games/launcher.sh
+
+Application;Game
+
+
++Other
+Other
+Applications that do not fit in other categories
+applications-other
+lxde-other.directory
+3
+0
+-libreoffice-xsltfilter.desktop
+LibreOffice XSLT based filters
+
+
+
+9
+XSLT based filters
+libreoffice %U
+6
+0
+
+
+
+
+-lxde-logout.desktop
+Logout
+Logout, shutdown or reboot
+gnome-logout
+
+8
+
+lxde-logout
+4
+0
+lxde-logout
+
+
+
+-mono-runtime-common.desktop
+Mono Runtime
+
+mono-runtime-common
+
+8
+
+mono
+4
+0
+mono
+
+
+
+-mono-runtime-terminal.desktop
+Mono Runtime (Terminal)
+
+mono-runtime-common
+
+8
+
+mono
+5
+0
+mono
+
+
+
+-lxde-screenlock.desktop
+ScreenLock
+Lock your screen
+system-lock-screen
+
+9
+
+lxlock
+4
+0
+lxlock
+
+
+
+-realvnc-vncserverui-user.desktop
+VNC Server
+
+/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+
+9
+VNC Server
+vncserver-x11 -showstatus
+4
+0
+
+
+
+
+-realvnc-vncserverui-service.desktop
+VNC Server
+
+/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+
+9
+VNC Server
+
+4
+0
+
+
+
+
+-realvnc-vnclicensewiz.desktop
+VNC Server - Licensing
+
+/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+
+9
+VNC Server
+
+4
+0
+
+
+
+
+
++System
+System Tools
+System configuration and monitoring
+applications-system
+lxde-system-tools.directory
+3
+0
+-htop.desktop
+Htop
+Show System Processes
+htop
+
+8
+Process Viewer
+htop
+5
+0
+
+
+ConsoleOnly;System
+system,process,task
+-pi-gpk-install-local-file.desktop
+Package Install
+Install selected packages on the system
+system-software-install
+
+9
+
+pi-gpk-install-local-file %F
+6
+0
+
+
+System
+
+-pi-gpk-log.desktop
+Package Log
+View past package management tasks
+gpk-log
+
+9
+
+pi-gpk-log
+6
+0
+
+
+GNOME;GTK;System
+
+-pi-gpk-update-viewer.desktop
+Package Updater
+Update software installed on the system
+system-software-update
+
+9
+
+pi-gpk-update-viewer
+6
+-5
+
+
+GNOME;GTK;System
+
+-hplj1020.desktop
+Reactivate HP LaserJet 1018/1020 after reloading paper
+Click the button in this program when your printer ran out of paper and you have refilled the paper
+/usr/share/pixmaps/hplj1020_icon.png
+
+8
+
+/usr/share/foo2zjs/hplj10xx_gui.tcl
+6
+0
+
+
+System
+
+-pi-gpk-dbus-service.desktop
+Software Install
+Install selected software on the system
+system-software-install
+
+9
+
+pi-gpk-dbus-service
+6
+0
+
+
+System
+
+-lxde-x-terminal-emulator.desktop
+Terminal emulator
+Terminal Emulator
+terminal
+
+8
+Terminal Emulator
+/usr/bin/x-terminal-emulator
+6
+0
+/usr/bin/x-terminal-emulator
+
+System;TerminalEmulator;Utility
+
+
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+3
+0
+-xarchiver.desktop
+Archiver
+Create and access archive files
+xarchiver.png
+
+8
+Archive manager
+xarchiver
+2
+0
+xarchiver
+
+GTK;Archiving;Utility
+
+-galculator.desktop
+Calculator
+Perform simple and scientific calculations
+galculator
+
+8
+
+galculator
+2
+0
+galculator
+
+Utility
+
+-pcmanfm.desktop
+File Manager
+Browse the file system and manage the files
+system-file-manager
+
+8
+File Manager
+pcmanfm %U
+2
+0
+pcmanfm
+
+FileManager;Utility;Core;GTK
+
+-qpdfview.desktop
+PDF Viewer
+Viewer for PDF files
+xpdf
+
+9
+PDF Viewer
+qpdfview --unique %F
+0
+0
+qpdfview
+
+Viewer;Utility
+viewer,document,presentation,pdf,ps,djvu
+-xpdf.desktop
+PDF Viewer
+Viewer for PDF files
+xpdf
+
+8
+PDF viewer
+xpdf
+0
+0
+xpdf
+
+Viewer;Utility
+
+-gksu.desktop
+Root Terminal
+Opens a terminal as the root user, using gksu to ask for the password
+gksu-root-terminal
+
+8
+
+gksu /usr/bin/x-terminal-emulator
+6
+0
+gksu
+
+GTK;Utility;TerminalEmulator
+
+-piclone.desktop
+SD Card Copier
+Make a copy of the Raspbian SD card
+media-removable
+
+9
+SD Card Copier
+env SUDO_ASKPASS=/usr/lib/piclone/pwdpic.sh sudo -A dbus-launch piclone
+2
+-11
+
+
+Utility
+
+-lxtask.desktop
+Task Manager
+Manages running processes
+utilities-system-monitor
+
+8
+Process manager
+lxtask
+2
+0
+lxtask
+
+GTK;Utility;Monitor
+
+-lxterminal.desktop
+Terminal
+Command-line terminal
+lxterminal
+
+8
+Terminal
+lxterminal
+2
+0
+lxterminal
+
+GTK;Utility;TerminalEmulator
+
+-leafpad.desktop
+Text Editor
+Simple text editor
+accessories-text-editor
+
+8
+
+leafpad %f
+0
+0
+leafpad
+
+GTK;Utility;TextEditor
+
+-vim.desktop
+Vim
+Edit text files
+gvim
+
+9
+Text Editor
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+Text,editor
+
++Universal Access
+Universal Access
+Universal Access Settings
+preferences-desktop-accessibility
+lxde-utility-accessibility.directory
+3
+4
+
+-
++Help
+Help
+Reference material
+gnome-help
+lxde-help.directory
+2
+0
+-debian-reference-common.desktop
+Debian Reference
+Debian Reference Guide
+debian-reference.png
+
+8
+
+debian-reference
+0
+0
+debian-reference
+
+Help
+
+-raspi_getstart.desktop
+Get Started
+
+rpi
+
+8
+
+x-www-browser https://rpf.io/raspbian-getstarted
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+-help.desktop
+Help
+Link to help pages
+rpi
+
+8
+
+x-www-browser https://rpf.io/raspbian-help
+0
+0
+/usr/bin/x-www-browser
+
+Help
+
+-raspi_resources.desktop
+Projects
+
+rpi
+
+8
+
+x-www-browser https://rpf.io/raspbian-projects
+2
+0
+/usr/bin/x-www-browser
+
+Help
+
+-magpi.desktop
+The MagPi
+Link to downloads of The MagPi magazine
+magpi
+
+8
+
+x-www-browser http://www.raspberrypi.org/magpi
+0
+0
+/usr/bin/x-www-browser
+
+Help
+
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+3
+0
+-pi-packages.desktop
+Add / Remove Software
+Add or remove software installed on the system
+system-software-install
+
+9
+
+pi-packages
+2
+-5
+
+
+GNOME;GTK;System;Settings;PackageManager
+Updates,Upgrade,Sources,Repositories,Preferences,Install,Store
+-pipanel.desktop
+Appearance Settings
+Configure the appearance of the desktop and windows
+preferences-desktop-theme
+
+9
+Appearance Settings
+env SUDO_ASKPASS=/usr/lib/pipanel/pwdpip.sh pipanel
+2
+-11
+
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+-pimixer.desktop
+Audio Device Settings
+Settings for internal and external audio devices
+multimedia-volume-control
+
+9
+
+pimixer
+2
+0
+
+
+Settings
+
+-lxsession-default-apps.desktop
+Default applications for LXSession
+Change the default applications on LXDE
+xfwm4
+
+8
+
+lxsession-default-apps
+4
+-15
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-pcmanfm-desktop-pref.desktop
+Desktop Preferences
+Change desktop wallpapers and behaviour of desktop manager
+user-desktop
+
+8
+
+pcmanfm --desktop-pref
+6
+-15
+
+
+Settings;GTK;DesktopSettings;X-LXDE-Settings
+
+-lxsession-edit.desktop
+Desktop Session Settings
+Manage applications loaded in desktop session
+xfwm4
+
+8
+
+lxsession-edit
+4
+-15
+lxsession-edit
+
+Settings;DesktopSettings;X-LXDE-Settings
+
+-lxrandr.desktop
+Display Settings
+Change screen resolution and configure external monitors
+display
+
+8
+
+lxrandr
+4
+0
+
+
+GTK;Settings;HardwareSettings
+
+-lxkeymap.desktop
+Lxkeymap
+Lxkeymap application
+/usr/share/lxkeymap/media/icon.png
+
+8
+
+lxkeymap
+4
+0
+
+
+Settings
+
+-alacarte.desktop
+Main Menu Editor
+Add or remove applications from the main menu
+alacarte
+
+9
+
+alacarte
+2
+-5
+
+
+GNOME;Settings;DesktopSettings
+
+-lxinput.desktop
+Mouse and Keyboard Settings
+Configure mouse, keyboard, and other input devices
+preferences-desktop-peripherals
+
+9
+
+lxinput
+2
+-47
+lxinput
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-obconf.desktop
+Openbox Configuration Manager
+Tweak settings for Openbox
+obconf
+
+8
+Configuration Manager
+obconf %f
+6
+0
+
+
+Settings;DesktopSettings;GTK
+openbox,settings,configurations,themes
+-openjdk-7-policytool.desktop
+OpenJDK Java 7 Policy Tool
+OpenJDK Java 7 Policy Tool
+openjdk-7
+
+8
+
+/usr/bin/policytool
+4
+0
+
+
+Settings
+
+-pi-gpk-prefs.desktop
+Package Sources
+Enable or disable package repositories
+gpk-prefs
+
+9
+
+pi-gpk-prefs
+6
+-5
+
+
+Settings;X-GNOME-SystemSettings
+
+-qt5ct.desktop
+Qt5 Settings
+Qt5 Configuration Tool
+preferences-desktop-theme
+
+8
+
+qt5ct
+4
+0
+
+
+Settings;DesktopSettings;Qt
+settings,desktop,qt,qtsettings,qt5
+-rc_gui.desktop
+Raspberry Pi Configuration
+Configure Raspberry Pi system
+rpi
+
+9
+Raspberry Pi Configuration
+env SUDO_ASKPASS=/usr/lib/rc-gui/pwdrcg.sh sudo -A rc_gui
+2
+-11
+
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+-rp-prefapps.desktop
+Recommended Software
+Install additional programs recommended for use on the Pi
+rpi
+
+9
+Recommended Software
+env SUDO_ASKPASS=/usr/lib/rp-prefapps/pwdrpp.sh sudo -A rp-prefapps
+2
+-11
+
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+-lxhotkey-gtk.desktop
+Setup Hot Keys
+View and change Window Manager global shortcuts
+preferences-desktop-keyboard
+
+8
+
+lxhotkey --gui=gtk
+6
+-47
+
+
+DesktopSettings;Settings;Core;GTK
+hotkey,shortcut,system,settings
+-lxappearance.desktop
+Theme and Appearance Settings
+Customises look and feel of your desktop and applications
+preferences-desktop-theme
+
+8
+Theme and Appearance Settings
+lxappearance
+6
+-11
+lxappearance
+
+Settings;DesktopSettings;GTK;X-LXDE-Settings
+
+-wpa_gui.desktop
+WiFi Configuration
+WiFi configuration utility
+wpa_gui
+
+8
+wpa_supplicant user interface
+/usr/sbin/wpa_gui
+4
+0
+/usr/sbin/wpa_gui
+
+Settings
+
+
+
