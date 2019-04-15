@@ -80,3 +80,5 @@ sudo cp -R /home/mk /home/pi/backup/
 
 green_msg "Done! A restart is necessary!"
 green_msg "sudo shutdown -r now" 
+blue_msg "(it`s recommended to make a copy of the current berryboot system including all data"
+blue_msg "by this you can allways return to a fresh mediakit install ...)"
