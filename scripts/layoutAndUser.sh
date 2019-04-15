@@ -56,7 +56,7 @@ sudo cp sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
 sudo cp -R sources/home/mk /home/
 
 #### give directories to user mk
-sudo chown -R mk:mk /home/mk/*
+sudo chown -R mk:mk /home/mk
 
 #### copying all mediakit desktop icons
 sudo cp sources/usr/share/pixmaps/* /usr/share/pixmaps/
