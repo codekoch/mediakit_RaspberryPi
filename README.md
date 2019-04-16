@@ -12,7 +12,7 @@ Demo: https://youtu.be/1EJf5ur1sM4
 or  
 - Install latest mediakit version in a fresh Raspbian enviroment via github (see Installing section)
 
-### Installing
+## Installing
 1. Install [berryboot] (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
 2. Start Raspbian and set WiFi country 
 3. Open a terminal and clone this github repository: 
