@@ -34,4 +34,4 @@ Feel free to fork and optimize the code or to pull requests. We think the mediak
 Olaf Koch, Simon Zander
 
 ## License
-This project is licensed under licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
+This project is licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
