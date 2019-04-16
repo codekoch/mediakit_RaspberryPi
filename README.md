@@ -3,9 +3,9 @@ http://mediakit.education
 
 Demo: https://youtu.be/1EJf5ur1sM4
 
-Digitale Tafel, Wireless Display, WLAN-Router, Fileserver und PC in Einem für unter 100€:
+digital chalkboard, wireless display, wlan hotspot, fileserver and PC - All in one for less than 100€:
 
-mediakit 
+<b>mediakit</b> 
 
 Digitalisierung von Klassenzimmern -
 
