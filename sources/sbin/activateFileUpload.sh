@@ -20,7 +20,10 @@ name="serverQRCode.png"
 test=`/bin/ps -aux | grep -i $name | wc -l`
 if [ $test == 1 ]
 then
-gpicview /opt/serverQRCode.png &
+#gpicview /opt/serverQRCode.png &
+qrencode -s 30 -o $name "http://1.1.1.1:3000" | mogrify -fill black -gravity North -font FreeMono -pointsize 60 -draw "text 0,0 'https://1.1.1.1:3000'" $name
+gpicview $name &
 fi
 zenity --width=600 --height=100 --info --text "File Upload for /home/mk/Uploads activated. Press button to deactivate." --ok-label="Deactivate File Upload" 2> /dev/null 
 stopMkServer.sh
+rm $name

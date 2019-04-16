@@ -21,7 +21,7 @@ yp=$(($yp+$pointsize))
 #if [ -z $wlanModul1 ]; then
 #sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $pointsize -draw "text 0,"$yp" 'WLAN SSID:'" /usr/share/rpd-wallpaper/info.jpg
 #else
-sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $pointsize -draw "text 0,"$yp" 'WLAN / MIRACAST SSID:" /usr/share/rpd-wallpaper/info.jpg
+sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $pointsize -draw "text 0,"$yp" 'WLAN / MIRACAST SSID:'" /usr/share/rpd-wallpaper/info.jpg
 #fi
 yp=$(($yp+$pointsize))
 sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $bigpointsize -draw "text 0,"$yp" '"$wlanssid"'" /usr/share/rpd-wallpaper/info.jpg
