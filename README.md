@@ -1,6 +1,5 @@
 # mediakit
-### digitalisation of schools
-## simple, independent, reliable, economical 
+### digitalisation of schools - simple, independent, reliable, economical 
 ### digital chalkboard, wireless display, wlan hotspot, fileserver and PC
 ### All in one for less than 100€:
 
