@@ -1,7 +1,9 @@
 # mediakit
-http://mediakit.education
+## digitalisation of schools
+## simple, independent, reliable, economical 
 ## digital chalkboard, wireless display, wlan hotspot, fileserver and PC - All in one for less than 100€:
 
+http://mediakit.education
 Demo: https://youtu.be/1EJf5ur1sM4
  
 ## Getting Started
@@ -23,7 +25,7 @@ or
 7. reboot
 
 ## Contributing
-Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea beside the usual commercial projects and perfect to push the serious digitalisation of schools with a low budget.
+Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea and perfect to seriously push the digitalisation of schools with a low budget beside the usual commercial ways.
 
 ## Authors
 Olaf Koch, Simon Zander
