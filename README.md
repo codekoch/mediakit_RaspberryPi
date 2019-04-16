@@ -1,38 +1,31 @@
 # mediakit
-http://mediakit.education
+## digital chalkboard, wireless display, wlan hotspot, fileserver and PC - All in one for less than 100€:
 
 Demo: https://youtu.be/1EJf5ur1sM4
+ 
+## Getting Started
+- Get a Raspberry Pi 3 B+ with a SD-Card 
+- Visit http://mediakit.education and get a working image file
+or  
+- Install latest mediakit version in a fresh Raspbian enviroment via github (see Installing section)
 
-digital chalkboard, wireless display, wlan hotspot, fileserver and PC - All in one for less than 100€:
+### Installing
+1. Install berryboot on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
+2. Start Raspbian
+3. Open a terminal and clone this github repository: 
+> git clone https://github.com/codekoch/mediakit_RaspberryPi
+4. change into repository:
+>cd mediakit_RaspberryPi
+5. Run install.sh script:
+>./install.sh
+6. Change current password of user pi to mediakitadmin or to what ever you want ;-)
+7. reboot
 
-<b>mediakit</b> 
+## Contributing
+Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea beside the usual commercial projects and perfect to push the serious digitalisation of schools with a low budget.
 
-Digitalisierung von Klassenzimmern -
+## Authors
+Olaf Koch, Simon Zander
 
-einfach, unabhängig, zuverlässig, kostengünstig
-
-Durch unserer Tätigkeit als Lehrer und Systemadministratoren bekommen wir vor und hinter den Kulissen mit, wie schwierig es ist, eine sinnvolle und handhabbare Digitalisierung in der Schule zu realisieren. So wuchs die Idee, ein System zu schaffen, das die Schwierigkeiten der Digitalisierung in der Schule zum Teil beseitigt. Das Hauptziel dabei war es, eine kostengünstige Lösung zu entwerfen, die einerseits zuverlässig und wartungsfrei funktioniert und andererseits für die Lehrkräfte viele Einsatzmöglichkeiten bietet und einfach zu bedienen ist
-
-Was die Digitalisierung im Grundsatz angeht, sind sich wahrscheinlich viele Lehrkräfte einig. Die Digitalisierung kann zu einer verbesserten individuellen Förderung beitragen. Die Kompetenzen im Umgang mit den neuen Medien müssen jedoch nicht an bestimmten Systemen von speziellen Firmen erlernt werden. Es muss vielmehr ein prinzipielles Verständnis über den Nutzen dieser Medien für bestimmte Situationen erlangt werden. Dabei sollten die Schülerinnen und Schüler vor allem auch lernen, dass es neben dem einen evtl. kommerziellen Produkt auch viele Alternativen gibt, die ebenso oder sogar besser geeignet sein können, um eine bestimmte Problemstellung zu bewältigen. Letztendlich sollten Kompetenzen mit neuen Medien unabhängig von wirtschaftlichen Interessen erworben werden können, was bei den bisher gängigen Initiativen wie z.B. "I-Pad-Klassen" oder "für die Schulzeit kostenlose Microsoftprodukte" durchaus in Frage gestellt werden kann, wenn sie unreflektiert und alternativlos durchgeführt werden.
-
-Beim mediakit werden diese Gedanken umgesetzt, indem auf freie Software gesetzt wird, mit Technik, die verhältnismäßig preiswert ist, stabil läuft und einfach zu bedienen ist. Darüberhinaus ist die Interaktion mit dem mediakit systemunabhängig, d.h. es ist egal, ob auf dem externen Gerät z.B. ein iOS-, Android-, Linux- oder Windowssystem läuft.
-
-Das mediakit ist am Albert-Einstein-Gymnasium Kaarst schon erfolgreich im Einsatz und erfüllt im Unterrichtsalltag viele Funktionen.
-
-Olaf Koch und Dr. Simon Zander
-
--------------------------------
-Update der RaspberryPi Version:
-
-Login als User pi:
-
-git clone https://github.com/codekoch/mediakit_RaspberryPi
-
-cd mediakit_RaspebrryPi
-
-sudo ./install.sh
-
-sudo shutdown -r now
-
-
-
+## License
+This project is licensed under licensed under the GNU General Public License v3.0 see the [LICENSE.md](LICENSE.md) file for details
