@@ -1,4 +1,5 @@
 # mediakit
+http://mediakit.education
 ## digital chalkboard, wireless display, wlan hotspot, fileserver and PC - All in one for less than 100€:
 
 Demo: https://youtu.be/1EJf5ur1sM4
@@ -10,7 +11,7 @@ or
 - Install latest mediakit version in a fresh Raspbian enviroment via github (see Installing section)
 
 ### Installing
-1. Install berryboot (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
+1. Install [berryboot] (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
 2. Start Raspbian
 3. Open a terminal and clone this github repository: 
 > git clone https://github.com/codekoch/mediakit_RaspberryPi
@@ -28,4 +29,4 @@ Feel free to fork and optimize the code or to pull requests. We think the mediak
 Olaf Koch, Simon Zander
 
 ## License
-This project is licensed under licensed under the GNU General Public License v3.0 see the [LICENSE.md](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
+This project is licensed under licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
