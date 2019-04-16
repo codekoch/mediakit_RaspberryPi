@@ -17,12 +17,12 @@ or
 2. Start Raspbian
 3. Open a terminal and clone this github repository: 
 > git clone https://github.com/codekoch/mediakit_RaspberryPi
-4. change into repository:
+4. Change into repository:
 >cd mediakit_RaspberryPi
 5. Run install.sh script:
 >./install.sh
 6. Change current password of user pi to mediakitadmin or to what ever you want ;-)
-7. reboot
+7. Reboot
 
 ## Contributing
 Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea and perfect to seriously push the digitalisation of schools with a low budget beside the usual commercial ways.
