@@ -25,6 +25,7 @@ or
 >./install.sh
 6. Change current password of user pi to mediakitadmin or to what ever you want ;-)
 7. Reboot
+<br>
 ![screen](http://mediakit.education/images/screen.jpg)
 ## Recommendation
 - With an external wlan dongle wireless display (miracast) and hotspot are activated simultaneously
