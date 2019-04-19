@@ -45,6 +45,9 @@ Feel free to fork and optimize the code or to pull requests. We think the mediak
 ## Authors
 Olaf Koch, Simon Zander
 
+## Contact
+info@mediakit.education
+
 ## License
 This project is licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
 
