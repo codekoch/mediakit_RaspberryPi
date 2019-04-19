@@ -7,11 +7,11 @@
 Website: http://mediakit.education<br>
 Demo: https://youtu.be/1EJf5ur1sM4
  
-## Getting Started ###(Raspberry Pi Version)
+## Getting Started
 - Get a Raspberry Pi 3 B+ with a SD-Card 
 - Visit http://mediakit.education and get a working image file
 or  
-- Install latest mediakit version in a fresh Raspbian enviroment via github (see Installing section)
+- Install latest mediakit version in a fresh Raspbian enviroment via github (see installing section)
 
 ## Installing
 1. Install [berryboot] (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
