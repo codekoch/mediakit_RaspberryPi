@@ -31,8 +31,8 @@ or
 
 ## Hints
 - Screenmirroring via miracast works with Android (i.e. SmartView) and Windows devices 
-- Guacamole clientless remote desktop is available via http://1.1.1.1:8080 (WLAN) or http://<LAN IP of your pi>:8080 (LAN)
-- If a mediakit server is activated, it is available via http://1.1.1.1:3000 (WLAN) or http://<LAN IP of your pi>:3000 (LAN) 
+- Guacamole clientless remote desktop is available via http://1.1.1.1:8080 (WLAN) or http://[LAN IP of your pi]:8080 (LAN)
+- If a mediakit server is activated, it is available via http://1.1.1.1:3000 (WLAN) or http://[LAN IP of your pi]:3000 (LAN) 
 - WLAN password and miracast pin are randomly generated at startup
 - All changes done by user mk are deleted at startup
 
