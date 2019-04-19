@@ -7,7 +7,7 @@
 http://mediakit.education<br>
 Demo: https://youtu.be/1EJf5ur1sM4
  
-## Getting Started
+## Raspberry Pi Version - Getting Started
 - Get a Raspberry Pi 3 B+ with a SD-Card 
 - Visit http://mediakit.education and get a working image file
 or  
