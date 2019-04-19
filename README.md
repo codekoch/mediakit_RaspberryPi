@@ -23,8 +23,9 @@ or
 >cd mediakit_RaspberryPi
 5. Run install.sh script:
 >./install.sh
-6. Change current password of user pi to mediakitadmin or to what ever you want ;-)
-7. Reboot
+6. Change current password of user pi to mediakitadmin or to what ever you want.
+7. Relax and take a coffee. Installation will take a while...
+8. Reboot
 
 ![screen](http://mediakit.education/images/screen.jpg)
 ## Recommendation
