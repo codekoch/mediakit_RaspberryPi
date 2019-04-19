@@ -42,7 +42,7 @@ sudo chmod 755 /sbin/restoreP2PWlan.sh
 
 #### copy restoreMkProfile.sh which is called by start.sh and resets mk user account, copies berryboot config files and calls checkupdate.sh
 sudo cp sources/sbin/restoreMkProfile.sh /sbin/
-sudo chmod 755 /sbin/restoreMkProfile.s
+sudo chmod 755 /sbin/restoreMkProfile.sh
 
 #### copy checkupdate.sh which is called by restoreMkProfile.sh and checks for an update file (Mediakit.img256) on all usb-devices 
 sudo cp sources/sbin/checkupdate.sh /sbin/

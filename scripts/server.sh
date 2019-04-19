@@ -62,9 +62,7 @@ sudo cp sources/sbin/activateFileUpload.sh /sbin/
 sudo chmod 755 /sbin/activateFileUpload.sh
 sudo cp sources/sbin/startnode.sh /sbin/
 sudo chmod 755 /sbin/startnode.sh 
-sudo cp -R sources/opt/mkServer /opt/
-sudo chmod -R 755 /opt/mkServer
+sudo cp -R sources/usr/lib/node_modules/mkServer /usr/lib/node_modules/
+sudo chmod -R 755 /usr/lib/node_modules/mkServer
 sudo mkdir /home/mk/Uploads
-sudo chown mk:mk /home/mk/Uploads
-sudo mkdir /home/mk/
 sudo chown mk:mk /home/mk/Uploads
