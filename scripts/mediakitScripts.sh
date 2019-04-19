@@ -79,11 +79,11 @@ sudo cp sources/sbin/unblockInternet.sh /sbin/
 sudo chmod 755 /sbin/unblockInternet.sh
 
 ######## install screencast scripts
-sudo cp /sources/sbin/openscreencast.sh /sbin/
-sudo chmod 755 sources/sbin/openscreencast.sh
+sudo cp sources/sbin/openscreencast.sh /sbin/
+sudo chmod 755 /sbin/openscreencast.sh
 
-sudo cp /sources/sbin/screencast.py /sbin/
-sudo chmod 755 sources/sbin/screencast.py
+sudo cp sources/sbin/screencast.py /sbin/
+sudo chmod 755 /sbin/screencast.py
 
 
 

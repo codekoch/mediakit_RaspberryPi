@@ -30,6 +30,7 @@ if [ -e /dev/mmcblk0p1 ]
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
        sudo chown -R mk:mk /home/mk 
+       sleep 1
     fi  
     sudo umount /dev/$dataDevice
     sudo umount /dev/mmcblk0p1
@@ -51,7 +52,8 @@ else
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
-       sudo chown -R mk:mk /home/mk 
+       sudo chown -R mk:mk /home/mk
+       sleep 1 
     fi 
     sudo umount /dev/$dataDevice
     sudo umount /dev/sda1
