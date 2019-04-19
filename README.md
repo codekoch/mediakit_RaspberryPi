@@ -14,6 +14,7 @@ or
 - Install latest mediakit version in a fresh Raspbian enviroment via github (see installing section)
 
 ## Installing
+![install](http://mediakit.education/images/gitclone.jpg)
 1. Install [berryboot] (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11)
 2. Start Raspbian and set WiFi country 
 3. Open a terminal and clone this github repository: 
@@ -24,7 +25,7 @@ or
 >./install.sh
 6. Change current password of user pi to mediakitadmin or to what ever you want ;-)
 7. Reboot
-
+![screen](http://mediakit.education/images/screen.jpg)
 ## Recommendation
 - With an external wlan dongle wireless display (miracast) and hotspot are activated simultaneously
 
