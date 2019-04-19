@@ -28,10 +28,10 @@ sudo flatpak install -y flathub ch.openboard.OpenBoard
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
 sudo apt-get install -y xboxdrv
-
+sudo cp sources/usr/share/applications/parsec.desktop /usr/share/applications/
+sudo chmod 755 /usr/share/applications/parsec.desktop
 
 #### instal guacamole clientsless remote desktop
-#sudo apt-get remove -y realvnc*
 sudo apt-get purge -y realvnc*
 sudo apt-get install -y libcairo2-dev
 sudo apt-get install -y libjpeg62-turbo-dev
@@ -65,5 +65,4 @@ sudo chmod 777 /home/mk/.config/autostart/x11vnc.desktop
 sudo cp sources/var/lib/jetty9/webapps/guacamole.war /var/lib/jetty9/webapps/
 sudo cp sources/var/lib/jetty9/webapps/root/index.html /var/lib/jetty9/webapps/root/
 
-## pip, pymsgbox
 

@@ -85,5 +85,5 @@ sudo chmod 755 /sbin/openscreencast.sh
 sudo cp sources/sbin/screencast.py /sbin/
 sudo chmod 755 /sbin/screencast.py
 
-
+sudo pip install PyMsgBox
 

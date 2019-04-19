@@ -28,6 +28,14 @@ or
 8. Reboot
 
 ![screen](http://mediakit.education/images/screen.jpg)
+
+## Hints
+- Screenmirroring via miracast works with Android (i.e. SmartView) and Windows devices 
+- Guacamole clientless remote desktop is available via http://1.1.1.1:8080 (WLAN) or http://<LAN IP of your pi>:8080 (LAN)
+- If a mediakit server is activated, it is available via http://1.1.1.1:3000 (WLAN) or http://<LAN IP of your pi>:3000 (LAN) 
+- WLAN password and miracast pin are randomly generated at startup
+- All changes done by user mk are deleted at startup
+
 ## Recommendation
 - With an external wlan dongle wireless display (miracast) and hotspot are activated simultaneously
 
@@ -39,3 +47,4 @@ Olaf Koch, Simon Zander
 
 ## License
 This project is licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
+
