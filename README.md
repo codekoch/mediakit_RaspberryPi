@@ -4,10 +4,10 @@
 ### interactive whiteboard, wireless display, wlan hotspot, fileserver and PC
 ### All in one for less than 100€:
 
-http://mediakit.education<br>
+Website: http://mediakit.education<br>
 Demo: https://youtu.be/1EJf5ur1sM4
  
-## Raspberry Pi Version - Getting Started
+## Getting Started ###(Raspberry Pi Version)
 - Get a Raspberry Pi 3 B+ with a SD-Card 
 - Visit http://mediakit.education and get a working image file
 or  
