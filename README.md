@@ -27,7 +27,7 @@ or
 7. Relax and take a coffee. Installation will take a while...
 8. Reboot
 
-![screen](http://mediakit.education/images/screen.jpg)
+![screen](http://mediakit.education/images/collage.jpg)
 
 ## Hints
 - Screenmirroring via miracast works with Android (i.e. SmartView) and Windows devices 
