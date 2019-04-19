@@ -1,0 +1,6 @@
+<configs>
+    <config name="pi" protocol="vnc">
+        <param name="hostname" value="localhost" />
+        <param name="port" value="5900" />
+    </config>
+</configs>

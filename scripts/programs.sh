@@ -24,6 +24,28 @@ sudo apt-get install -y qrencode
 sudo apt-get install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y flathub ch.openboard.OpenBoard
+#### instal guacamole clientsless remote desktop
+#sudo apt-get remove -y realvnc*
+sudo apt-get purge -y realvnc*
+sudo apt-get install -y libcairo2-dev
+sudo apt-get install -y libjpeg62-turbo-dev
+sudo apt-get install -y libpng12-dev
+sudo apt-get install -y libossp-uuid-dev
+sudo apt-get install -y libavcodec-dev libavutil-dev libswscale-dev
+sudo apt-get install -y libpango1.0-dev
+sudo apt-get install -y libssh2-1-dev
+sudo apt-get install -y libtelnet-dev
+sudo apt-get install -y libvncserver-dev
+sudo apt-get install -y libpulse-dev
+sudo apt-get install -y libssl-dev
+sudo apt-get install -y libvorbis-dev
+sudo apt-get install -y libwebp-dev
+sudo apt-get install -y jetty9
+sudo apt-get install -y x11vnc
+sudo cp -R sources/etc/guacamole /etc/
+sudo chmod -R 755 /etc/guacamole
+sudo cp sources/home/mk/.config/autostart/x11vnc.desktop /home/mk/.config/autostart/
+sudo chmod 777 /home/mk/.config/autostart/x11vnc.desktop
 
 # sudo apt-get install -y zenity
 # sudo apt-get install -y pinta

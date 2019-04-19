@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=X11 VNC
+Comment=Remotedesktop Server
+Exec=x11vnc -forever -nopw -rfbport 5900 -display :0
+Terminal=false
+Type=Application
+X-MATE-Autostart-enabled=true
+Comment[de_DE]=Remotedesktop Server
