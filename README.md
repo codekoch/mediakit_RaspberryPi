@@ -31,7 +31,7 @@ or
 - With an external wlan dongle wireless display (miracast) and hotspot are activated simultaneously
 
 ## Contributing
-Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea and perfect to seriously push the digitalisation of schools with a low budget beside the usual commercial ways.
+###Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea and perfect to ###seriously push the digitalisation of schools with a low budget beside the usual commercial ways.
 
 ## Authors
 Olaf Koch, Simon Zander
