@@ -43,6 +43,7 @@ or
 
 ## Recommendation
 - With an external wlan dongle wireless display (miracast) and hotspot are activated simultaneously
+- Create a copy of the fresh mediakit build with the clone function of berrryboot (see https://www.berryterminal.com/doku.php/berryboot), so that you can allways restore the initial state after some experiments 
 
 ## Contributing
 Feel free to fork and optimize the code or to pull requests. We think the mediakit project is a good idea and perfect to seriously push the digitalisation of schools with a low budget beside the usual commercial ways. But therefore it needs a strong and active community. Be part of it!
