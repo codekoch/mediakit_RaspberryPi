@@ -51,3 +51,13 @@ info@mediakit.education
 ## License
 This project is licensed under the GNU General Public License v3.0 see the [LICENSE](https://github.com/codekoch/mediakit_RaspberryPi/blob/master/LICENSE) file for details
 
+## Credits 
+The mediakit project is based on many scripts and external open source software. A few projects should not go unmentioned...
+- https://www.berryterminal.com/doku.php/berryboot
+- https://github.com/homeworkc/lazycast
+- https://github.com/efeiefei/node-file-manager
+- https://github.com/flatpak/flatpak
+- https://www.raspbian.org/
+
+
+
