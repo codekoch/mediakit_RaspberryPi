@@ -4,7 +4,7 @@
 ![](https://img.shields.io/github/last-commit/codekoch/mediakit_RaspberryPi.svg)
 ![](https://img.shields.io/github/release/codekoch/mediakit_RaspberryPi.svg)
 ![](https://img.shields.io/github/release-date/codekoch/mediakit_RaspberryPi.svg)
-![](https://img.shields.io/github/followers/codekoch/mediakit_RaspberryPi.svg?style=social)
+![](https://img.shields.io/github/followers/codekoch.svg?style=social)
 ![](https://img.shields.io/github/forks/codekoch/mediakit_RaspberryPi.svg?style=social)
 ![](https://img.shields.io/github/watchers/codekoch/mediakit_RaspberryPi.svg?style=social)
 ![](https://img.shields.io/github/stars/codekoch/mediakit_RaspberryPi.svg?style=social)
