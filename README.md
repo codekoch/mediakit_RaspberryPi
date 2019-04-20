@@ -31,7 +31,7 @@ or
 >cd mediakit_RaspberryPi
 5. Run install.sh script:
 >./install.sh
-6. Change current password of user pi to mediakitadmin or to what ever you want.
+6. Change current password of user pi to mediakitadmin or to whatever you want.
 7. Relax and take a coffee. Installation will take a while...
 8. Reboot
 
