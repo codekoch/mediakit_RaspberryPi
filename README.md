@@ -1,4 +1,6 @@
 # mediakit
+(mediakit-RaspberryPi-orange.svg)
+(digitalisation of schools-simple, independent, reliable, economical-blue.svg)
 ## digitalisation of schools - simple, independent, reliable, economical 
 ![mediakit](http://mediakit.education/images/PenDisplay_Nuc2.jpg)
 ### interactive whiteboard, wireless display, wlan hotspot, fileserver and PC
