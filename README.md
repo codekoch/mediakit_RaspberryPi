@@ -4,6 +4,7 @@
 ![](https://img.shields.io/github/last-commit/codekoch/mediakit_RaspberryPi.svg)
 ![](https://img.shields.io/github/release/codekoch/mediakit_RaspberryPi.svg)
 ![](https://img.shields.io/github/release-date/codekoch/mediakit_RaspberryPi.svg)
+![](https://img.shields.io/github/downloads/codekoch/mediakit_RaspberryPi/v1.44/total.svg)
 ## digitalisation of schools - simple, independent, reliable, economical 
 ![mediakit](http://mediakit.education/images/PenDisplay_Nuc2.jpg)
 ### interactive whiteboard, wireless display, wlan hotspot, fileserver and PC
