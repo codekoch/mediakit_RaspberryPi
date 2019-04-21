@@ -24,7 +24,7 @@ or
 
 ## Installing
 ![install](http://mediakit.education/images/gitclone.jpg)
-1. Install berryboot (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card and install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11) and rename the image to Mediakit
+1. Install berryboot (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card, install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11) and rename the installed image to Mediakit
 2. Start Raspbian and set WiFi country 
 3. Open a terminal and clone this github repository: 
 > git clone https://github.com/codekoch/mediakit_RaspberryPi
