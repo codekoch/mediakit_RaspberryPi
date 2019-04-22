@@ -24,6 +24,11 @@ sudo apt-get install -y qrencode
 sudo apt-get install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y flathub ch.openboard.OpenBoard
+sudo apt-get install -y geogebra
+sudo apt-get install -y youtube-dl
+sudo apt-get install -y simplescreenrecorder
+sudo apt-get install -y ballerburg
+
 #### parsec
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
