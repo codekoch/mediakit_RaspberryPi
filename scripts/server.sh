@@ -41,8 +41,8 @@ sudo cp sources/usr/bin/node-file-manager /usr/bin/
 sudo chmod 755 /usr/bin/node-file-manager
 
 #### copy node-file-manager  
-sudo cp -R sources/usr/lib/node_modules/node-file-manager /usr/lib/node_modules/
-sudo chmod -R 755 /usr/lib/node_modules/node-file-manager
+#sudo cp -R sources/usr/lib/node_modules/node-file-manager /usr/lib/node_modules/
+#sudo chmod -R 755 /usr/lib/node_modules/node-file-manager
 
 ######## install FileBrowser ability
 
@@ -59,9 +59,12 @@ sudo cp sources/usr/bin/file-browser /usr/bin/
 sudo chmod 755 /usr/bin/file-browser
 
 #### copy node-file-manager  
-sudo cp -R sources/usr/lib/node_modules/file-browser /usr/lib/node_modules/
-sudo chmod -R 755 /usr/lib/node_modules/file-browser
+#sudo cp -R sources/usr/lib/node_modules/file-browser /usr/lib/node_modules/
+#sudo chmod -R 755 /usr/lib/node_modules/file-browser
 
+#### copy all node_modules
+sudo cp -R sources/usr/lib/node_modules/* /usr/lib/node_modules/
+sudo chmod -R 755 /usr/lib/node_modules/*
 
 ######## install FileUpload
 sudo cp sources/sbin/activateFileUpload.sh /sbin/
