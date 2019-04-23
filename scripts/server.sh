@@ -57,6 +57,11 @@ sudo chmod 755 /sbin/startFileBrowser.sh
 sudo cp sources/usr/bin/file-browser /usr/bin/
 sudo chmod 755 /usr/bin/file-browser
 
+#### copy node-file-manager  
+sudo cp -R sources/usr/lib/node_modules/file-browser /usr/lib/node_modules/
+sudo chmod -R 755 /usr/lib/node_modules/file-browser
+
+
 ######## install FileUpload
 sudo cp sources/sbin/activateFileUpload.sh /sbin/
 sudo chmod 755 /sbin/activateFileUpload.sh

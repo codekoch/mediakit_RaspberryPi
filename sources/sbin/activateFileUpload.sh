@@ -1,19 +1,19 @@
 #!/bin/bash
 pcmanfm /home/mk/Uploads &
 sleep 1
-cp /usr/lib/mkServer/fileTemplates.js /usr/lib/mkServer/templates.js
-cp /usr/lib/mkServer/fileConfig.js /usr/lib/mkServer/config.js
+cp /usr/lib/node_modules/mkServer/fileTemplates.js /usr/lib/node_modules/mkServer/templates.js
+cp /usr/lib/node_modules/mkServer/fileConfig.js /usr/lib/node_modules/mkServer/config.js
 name="node"
 test=`/bin/ps -aux | grep -i $name | wc -l`
 if [ $test == 1 ]
 then
-/sbin/startnode.sh /usr/lib/mkServer/index.js &
+/sbin/startnode.sh /usr/lib/node_modules/mkServer/index.js &
 fi
 
 if [ $test != 1 ]
 then
 stopMkServer.sh
-/sbin/startnode.sh /usr/lib/mkServer/index.js &
+/sbin/startnode.sh /usr/lib/node_modules/mkServer/index.js &
 fi
 
 name="serverQRCode.png"
