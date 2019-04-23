@@ -29,10 +29,9 @@ if [ -e /dev/mmcblk0p1 ]
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
-       sudo chmod -R 777 /home/mk
        sudo chown -R mk:mk /home/mk
+       sudo chmod -R 777 /home/mk
        sudo find  /home/mk/  -exec touch {} +
-#       sleep 1
     fi  
     sudo umount /dev/$dataDevice
     sudo umount /dev/mmcblk0p1
@@ -54,10 +53,9 @@ else
     sudo rm -R /b/data/Mediakit.img*/home/mk/.* #Remove the mk folder.
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
-       sudo chmod -R 777 /home/mk 
        sudo chown -R mk:mk /home/mk
+       sudo chmod -R 777 /home/mk
        sudo find  /home/mk/  -exec touch {} +
- #      sleep 1 
     fi 
     sudo umount /dev/$dataDevice
     sudo umount /dev/sda1
