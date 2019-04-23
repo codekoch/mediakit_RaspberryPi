@@ -1,26 +1,84 @@
-#!/bin/sh
-echo "install and configure everything..."
-#sudo rm /etc/rc3.d/S01randomWifi.sh
-#sudo update-rc.d -f randomWifi remove
-#sudo update-rc.d -f restoreTpProfile.sh remove
-#sudo apt-get update; sudo apt-get dist-upgrade -y
-#sudo apt-get install mesa-vdpau-drivers -y
-#echo "Then, open Chromium browser and write in address line:"
-#echo "chrome://flags"
-#echo "Here find and set enabled next flags:"
-#echo "enable-gpu-rasterization"
-#echo "enable-zero-copy"
-#echo "ignore-gpu-blacklist"
-#Next open in the editor Chromium shortcut (chromium-browser.desktop) and find the line:
+#!/bin/bash
+function red_msg() {
+echo -e "\\033[31;1m${@}\033[0m"
+}
+ 
+function green_msg() {
+echo -e "\\033[32;1m${@}\033[0m"
+}
+function yellow_msg() {
+echo -e "\\033[33;1m${@}\033[0m"
+}
+ 
+function blue_msg() {
+echo -e "\\033[34;1m${@}\033[0m"
+}
 
-#Exec=chromium-browser %U
+if ! [ -e "/boot/berryboot.img" ] ; then
+red_msg "ERROR! mediakit can only be installed on a berryboot system!"
+yellow_msg "https://berryterminal.com/doku.php/berryboot"
+exit
+fi  
+green_msg "install and configure everything..."
 
-#Edit it like this:
+######## install mediakit layout and user
+#yellow_msg "-install mediakit layout and mediakit user..."
+#scripts/layoutAndUser.sh
 
-#Exec=chromium-browser --enable-native-gpu-memory-buffers %U
+######## install router and miracast ability
+yellow_msg "-install router and miracast ability..."
+scripts/routerAndMiracast.sh
 
+######## install update ability
+yellow_msg "-install update ability..."
 
-echo "copying every script to the right place..."
-sudo cp -R ./sources/* /
-echo "done! A restart is necessary!"
-echo "sudo shutdown -r now" 
+######## install startup and mediakit scripts
+yellow_msg "-install startup and mediakit scripts..."
+scripts/mediakitScripts.sh
+
+######## install server ability
+yellow_msg "-install server functions..."
+scripts/server.sh
+
+#### Workspace
+yellow_msg "->install Workspace"
+#### Fileupload
+yellow_msg "->install Fileupload"
+#### FileBrowser
+yellow_msg "->install FileBrowser"
+#### Guacamole clientless remote desktop
+yellow_msg "->install guacamole clientless remote desktop"
+#### activate ssh
+
+#### install x11VNC Server (disable real vnc server)
+
+#### install smb server
+
+######## install mediakit selfhealing abitily
+yellow_msg "-install mediakit selfhealing ability"
+
+######## install some useful programs
+yellow_msg "-install some useful programs"
+scripts/programs.sh
+#### openboard
+#### python
+#### geogebra
+#### pinta
+#### java
+#### gparted
+#### ballerburg
+#### simplescreenrecorder
+#### youtube-dl
+
+######## copying sudoers file to give all necessary rights to user mk
+yellow_msg "-copying sudoers file to give all necessary rights to user mk"
+sudo cp sources/etc/sudoers /etc/
+#### create a copy of /home/mk which is used by restoreMkProfile.sh
+yellow_msg "-create copy of /home/mk"
+sudo mkdir /home/pi/backup
+sudo cp -R /home/mk /home/pi/backup/
+
+green_msg "Done! A restart is necessary!"
+green_msg "sudo shutdown -r now" 
+blue_msg "(its recommended to make a copy of the current berryboot system including all data"
+blue_msg "by this you can allways return to a fresh mediakit install ...)"
