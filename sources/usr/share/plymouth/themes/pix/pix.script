@@ -42,7 +42,7 @@ message_sprite = Sprite();
 message_sprite.SetPosition(screen_width * 0.1, screen_height * 0.9, 10000);
 
 fun message_callback (text) {
-	my_image = Image.Text("V1.44 Copyright Olaf Koch & Simon Zander 2018", 1, 1, 1);
+	my_image = Image.Text("v1.44 Copyright Olaf Koch & Simon Zander 2018", 1, 1, 1);
 	message_sprite.SetImage(my_image);
 	sprite.SetImage (resized_image);
 }

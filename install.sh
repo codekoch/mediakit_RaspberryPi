@@ -14,6 +14,9 @@ function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
 
+version=`git tag | tail`
+yellow_msg "Installing mediakit_RaspberryPi Version $version..."
+
 if ! [ -e "/boot/berryboot.img" ] ; then
 red_msg "ERROR! mediakit can only be installed on a berryboot system!"
 yellow_msg "https://berryterminal.com/doku.php/berryboot"
@@ -77,6 +80,9 @@ sudo cp sources/etc/sudoers /etc/
 yellow_msg "-create copy of /home/mk"
 sudo mkdir /home/pi/backup
 sudo cp -R /home/mk /home/pi/backup/
+
+#### set Version
+sudo  sed -i 's/my_image = Image.Text(\"v.*$/my_image = Image\.Text(\"'$version' Copyright Olaf Koch \& Simon Zander 2018\"\, 1\, 1\, 1)\;/g' /usr/share/plymouth/themes/pix/pix.script
 
 green_msg "Done! A restart is necessary!"
 green_msg "sudo shutdown -r now" 
