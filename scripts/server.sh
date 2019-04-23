@@ -16,6 +16,7 @@ echo -e "\\033[34;1m${@}\033[0m"
 
 #### copy hosts file (http://1.1.1.1 can be reached by http://mk)
 sudo cp sources/etc/hosts /etc/
+sudo cp sources/etc/hostname /etc/
 
 #### copy qr-code with server connection
 sudo cp sources/opt/serverQRCode.png /opt/
