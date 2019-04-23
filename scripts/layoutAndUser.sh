@@ -46,11 +46,8 @@ sudo cp sources/usr/share/rpd-wallpaper/logo.jpg /usr/share/rpd-wallpaper/
 #### desktop background (loading mediakit logo)
 sudo cp sources/usr/share/rpd-wallpaper/loading.jpg /usr/share/rpd-wallpaper/
 
+
 #### all desktop settings and icon arrangements
-#sudo cp -R sources/home/mk/.config/pcmanfm /home/mk/.config/
-#sudo cp -R sources/home/mk/Desktop /home/mk/
-#### all lxpanel settings
-#sudo cp -R sources/home/mk/.config/lxpanel /home/mk/.config/
 sudo cp -R sources/home/mk /home/
 
 #### give directories to user mk

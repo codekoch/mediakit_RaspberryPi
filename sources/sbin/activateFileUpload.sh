@@ -1,8 +1,8 @@
 #!/bin/bash
 pcmanfm /home/mk/Uploads &
 sleep 1
-cp /usr/lib/node_modules/mkServer/fileTemplates.js /usr/lib/node_modules/mkServer/templates.js
-cp /usr/lib/node_modules/mkServer/fileConfig.js /usr/lib/node_modules/mkServer/config.js
+#cp /usr/lib/node_modules/mkServer/fileTemplates.js /usr/lib/node_modules/mkServer/templates.js
+#cp /usr/lib/node_modules/mkServer/fileConfig.js /usr/lib/node_modules/mkServer/config.js
 name="node"
 test=`/bin/ps -aux | grep -i $name | wc -l`
 if [ $test == 1 ]
