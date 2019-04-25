@@ -1,15 +1,12 @@
 #!/bin/sh
 # setting up p2p-wlan
-#pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/loading.jpg"
 sudo service dnsmasq stop
 sudo service hostapd stop
-#sudo service networking restart
-#sudo service dhcpcd restart
 mac="`sudo /sbin/ifconfig eth0 | grep 'ether ' | awk '{ print $2}'`"
 mac2="`echo "$mac" | sed 's/\://g'`"
 wlanssid="MK-"$mac2
 #pin="`cat /etc/init.d/info.sh | grep -i "pin=" | sed 's/pin="//g' | sed 's/"//g'`"
-sudo  sed -i "s/device_name=.*$/device_name=$wlanssid/g" /etc/wpa_supplicant/wpa_supplicant.conf
+#sudo  sed -i "s/device_name=.*$/device_name=$wlanssid/g" /etc/wpa_supplicant/wpa_supplicant.conf
 ain="$(sudo wpa_cli interface)"
 echo "${ain}"
 if [ `echo "${ain}" | grep -c "p2p-wl"` -gt 0 ] 
@@ -17,8 +14,8 @@ then
         echo "already on"
 
 else
-        echo "ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev" > /etc/wpa_supplicant/wpa_supplicant.conf
-        echo "update_config=1" >> /etc/wpa_supplicant/wpa_supplicant.conf
+        sudo cp /etc/wpa_supplicant/wpa_supplicant.conf.normal /etc/wpa_supplicant/wpa_supplicant.conf
+        echo "device_name=$wlanssid" >> /etc/wpa_supplicant/wpa_supplicant.conf
         echo "" > /var/lib/misc/dnsmasq.leases
         sudo wpa_cli p2p_find type=progessive
         sudo wpa_cli set device_name $wlanssid

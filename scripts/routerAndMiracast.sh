@@ -37,8 +37,9 @@ sudo cp sources/etc/dnsmasq.conf* /etc/ #### copy dnsmasq.conf,dnsmasq.conf.inte
 #### copy dhcpcd config files
 sudo cp sources/etc/dhcpcd.conf* /etc/ #### copy dhcpcd.conf,dhcpcd.conf.intern, dhcpcd.conf.usb,dhcpcd.ocnf.normal
 
-#### wpa_supplicant config files  
-sudo cp sources/etc/wpa_supplicant/* /etc/wpa_supplicant/ #### copy wpa_supplicant.conf, wpa_supplicant.conf.normal
+#### copy current wpa_supplicant config file  
+sudo cp /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.normal
+
 
 #### network interfaces config files
 sudo cp sources/etc/network/* /etc/network/ #### copy interfaces, interfaces.intern, interfaces.normal, interfaces.usb
