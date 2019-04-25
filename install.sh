@@ -14,7 +14,7 @@ function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
 
-version=`git tag | tail`
+version=`git tag | tail -1`
 yellow_msg "Installing mediakit_RaspberryPi Version $version..."
 
 if ! [ -e "/boot/berryboot.img" ] ; then
