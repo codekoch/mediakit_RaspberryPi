@@ -30,8 +30,8 @@ if [ -e /dev/mmcblk0p1 ]
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
        sudo chown -R mk:mk /home/mk
-       sudo chmod -R 777 /home/mk
-       sudo find  /home/mk/  -exec touch {} +
+       sudo chmod -R 755 /home/mk
+#       sudo find  /home/mk/  -exec touch {} +
     fi  
     sudo umount /dev/$dataDevice
     sudo umount /dev/mmcblk0p1
@@ -54,8 +54,8 @@ else
     if [ -d "/home/pi/backup/mk" ]; then
        sudo cp -R /home/pi/backup/mk /home/
        sudo chown -R mk:mk /home/mk
-       sudo chmod -R 777 /home/mk
-       sudo find  /home/mk/  -exec touch {} +
+       sudo chmod -R 755 /home/mk
+#       sudo find  /home/mk/  -exec touch {} +
     fi 
     sudo umount /dev/$dataDevice
     sudo umount /dev/sda1
