@@ -36,6 +36,13 @@ mac="`sudo /sbin/ifconfig eth0 | grep 'ether ' | awk '{ print $2}'`"
 mac2="`echo "$mac" | sed 's/\://g'`"
 wlanssid="MK-"$mac2
 
+## set lxsession autostart 
+echo "@lxpanel --profile LXDE-pi" > /home/mk/.config/lxsession/LXDE-pi/autostart
+echo "@pcmanfm --desktop --profile LXDE-pi" >> /home/mk/.config/lxsession/LXDE-pi/autostart
+echo "@xscreensaver -no-splash" >> /home/mk/.config/lxsession/LXDE-pi/autostart
+echo "@point-rpi" >> /home/mk/.config/lxsession/LXDE-pi/autostart
+
+
 ## set wlan ssid
 sudo  sed -i "s/device_name=.*$/device_name=$wlanssid/g" /etc/wpa_supplicant/wpa_supplicant.conf
 
@@ -46,11 +53,13 @@ sudo cp /etc/dhcpcd.conf.intern /etc/dhcpcd.conf
 sudo service dhcpcd restart
 sudo cp /etc/hostapd/hostapd.conf.intern /etc/hostapd/hostapd.conf
 sudo cp /etc/dnsmasq.conf.intern /etc/dnsmasq.conf
+
 else
 ### 2 detected --> use usb wlan (wlan1) device
  sudo cp /etc/dhcpcd.conf.usb /etc/dhcpcd.conf
  sudo service dhcpcd restart
  sudo ifconfig wlan1 1.1.1.1
+ echo "@/opt/lazycast/allnew.sh" >> /home/mk/.config/lxsession/LXDE-pi/autostart
  while [ -z $ipset ]; do
   ipset="`sudo ifconfig | grep -i 'inet 1.1.1.1' | awk '{print $2}'` "
  done
