@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=lazycast
-Exec=/opt/lazycast/allnew.sh
-Type=application 
-Terminal=true
