@@ -2,10 +2,11 @@
 pin="65100000"
 cd /opt/lazycast
 ### test if desktop manager is active
-test = 1
-while $test < 2; do
-test = `ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
-if [ $test < 2 ]; then
+test=1
+while [ $test -lt  2 ]
+do
+test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+if [ $test -lt 2 ]; then
 pcmanfm --desktop --profile LXDE-pi &
 fi
 done
