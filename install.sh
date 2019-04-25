@@ -78,6 +78,8 @@ yellow_msg "-copying sudoers file to give all necessary rights to user mk"
 sudo cp sources/etc/sudoers /etc/
 #### create a copy of /home/mk which is used by restoreMkProfile.sh
 yellow_msg "-create copy of /home/mk"
+sudo chown -R mk:mk /home/mk
+sudo chmod -R 755 /home/mk
 sudo mkdir /home/pi/backup
 sudo cp -R /home/mk /home/pi/backup/
 
