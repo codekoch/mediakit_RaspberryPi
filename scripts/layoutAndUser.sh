@@ -29,6 +29,8 @@ mediakit
 Y
 EOF
 echo " "
+sudo usermod -a -G video mk
+
 #### setting up mediakit layout
 yellow_msg "->copying layout files..."
 #### menu launch button
