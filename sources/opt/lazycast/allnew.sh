@@ -5,10 +5,14 @@ cd /opt/lazycast
 test=1
 while [ $test -lt  2 ]
 do
-test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
-if [ $test -lt 2 ]; then
-pcmanfm --desktop --profile LXDE-pi &
-fi
+ test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+ if [ $test -lt 2 ]; then
+  pcmanfm --desktop --profile LXDE-pi &
+  sleep 1
+  pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/logo.jpg"
+  sleep 2
+  test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+ fi
 done
 
 while :
