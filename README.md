@@ -23,7 +23,7 @@ or
 - Install latest mediakit version in a fresh Raspbian enviroment via github (see installing section)
 
 ## Installing
-**1.** Install berryboot (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card, install the latest Raspbian FULL version (i.e. Raspbian FULL 2018.11), rename the installed image to Mediakit and set memory split to 256 (see following image)
+**1.** Install berryboot (https://www.berryterminal.com/doku.php/berryboot) on a fresh sd-card. Once you start your Pi it will start an installer that reformats the SD card and downloads the operating systems files from the Internet. Install the latest Raspbian FULL version suggested by berryboot install process (i.e. Raspbian FULL 2018.11), rename the installed image to Mediakit and set memory split to 256 (see following image)
 ![install1](http://mediakit.education/images/berryboot.jpg)
 
 **2.** Start Raspbian and set WiFi country 
