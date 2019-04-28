@@ -40,7 +40,7 @@ or
 
 ![install3](http://mediakit.education/images/gitclonenew.jpg)
 
-**6.** Change current password of user pi (normally **raspberry**) to **mediakitadmin** or to whatever you want.
+**6.** Change current password of user pi (usually **raspberry**) to **mediakitadmin** or to whatever you want.
 
 **7.** Relax and take a coffee. Installation will take a while...
 
