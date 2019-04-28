@@ -38,7 +38,7 @@ or
 **5.** Run install.sh script:
 >./install.sh
 
-![install3](http://mediakit.education/images/gitclone.jpg)
+![install3](http://mediakit.education/images/gitclonenew.jpg)
 
 **6.** Change current password of user pi to mediakitadmin or to whatever you want.
 
