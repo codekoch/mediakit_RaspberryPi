@@ -27,6 +27,7 @@ or
 ![install1](http://mediakit.education/images/berryboot.jpg)
 
 **2.** Start Raspbian and set WiFi country 
+![install2](http://mediakit.education/images/wificountry.jpg)
 
 **3.** Open a terminal and clone this github repository: 
 > git clone https://github.com/codekoch/mediakit_RaspberryPi
@@ -37,7 +38,7 @@ or
 **5.** Run install.sh script:
 >./install.sh
 
-![install2](http://mediakit.education/images/gitclone.jpg)
+![install3](http://mediakit.education/images/gitclone.jpg)
 
 **6.** Change current password of user pi to mediakitadmin or to whatever you want.
 
