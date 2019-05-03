@@ -1,0 +1,28 @@
+libguac_la-wait-fd.lo: wait-fd.c /usr/include/stdc-predef.h \
+ ../../config.h /usr/include/poll.h \
+ /usr/include/arm-linux-gnueabihf/sys/poll.h /usr/include/features.h \
+ /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
+ /usr/include/arm-linux-gnueabihf/bits/wordsize.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
+ /usr/include/arm-linux-gnueabihf/bits/poll.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:
+
+/usr/include/poll.h:
+
+/usr/include/arm-linux-gnueabihf/sys/poll.h:
+
+/usr/include/features.h:
+
+/usr/include/arm-linux-gnueabihf/sys/cdefs.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wordsize.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
+
+/usr/include/arm-linux-gnueabihf/bits/poll.h:

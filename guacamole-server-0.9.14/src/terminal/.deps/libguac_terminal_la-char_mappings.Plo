@@ -1,0 +1,6 @@
+libguac_terminal_la-char_mappings.lo: char_mappings.c \
+ /usr/include/stdc-predef.h ../../config.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:

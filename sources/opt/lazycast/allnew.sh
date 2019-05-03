@@ -1,6 +1,12 @@
 #!/bin/bash
 pin="65100000"
 cd /opt/lazycast
+### Wait until start.sh finished
+while ! [ -e /tmp/startFinished.tmp ]
+do
+echo "waiting for start.sh to be finished" 
+done
+rm /tmp/startFinished.tmp
 ### test if desktop manager is active
 test=1
 while [ $test -lt  2 ]

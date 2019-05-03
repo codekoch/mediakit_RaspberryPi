@@ -1,0 +1,488 @@
+libguac_client_vnc_la-display.lo: display.c /usr/include/stdc-predef.h \
+ ../../../config.h client.h ../../../src/libguac/guacamole/client.h \
+ ../../../src/libguac/guacamole/client-fntypes.h \
+ ../../../src/libguac/guacamole/client-types.h \
+ ../../../src/libguac/guacamole/object-types.h \
+ ../../../src/libguac/guacamole/protocol-types.h \
+ ../../../src/libguac/guacamole/stream-types.h \
+ ../../../src/libguac/guacamole/user-types.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include/stdarg.h \
+ ../../../src/libguac/guacamole/client-constants.h \
+ ../../../src/libguac/guacamole/layer-types.h \
+ ../../../src/libguac/guacamole/pool-types.h \
+ ../../../src/libguac/guacamole/socket-types.h \
+ ../../../src/libguac/guacamole/timestamp-types.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include/stdint.h \
+ /usr/include/stdint.h /usr/include/features.h \
+ /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
+ /usr/include/arm-linux-gnueabihf/bits/wordsize.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
+ /usr/include/arm-linux-gnueabihf/bits/wchar.h \
+ ../../../src/libguac/guacamole/user-fntypes.h /usr/include/cairo/cairo.h \
+ /usr/include/cairo/cairo-version.h /usr/include/cairo/cairo-features.h \
+ /usr/include/cairo/cairo-deprecated.h /usr/include/pthread.h \
+ /usr/include/endian.h /usr/include/arm-linux-gnueabihf/bits/endian.h \
+ /usr/include/sched.h /usr/include/arm-linux-gnueabihf/bits/types.h \
+ /usr/include/arm-linux-gnueabihf/bits/typesizes.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include/stddef.h /usr/include/time.h \
+ /usr/include/arm-linux-gnueabihf/bits/sched.h \
+ /usr/include/arm-linux-gnueabihf/bits/time.h /usr/include/xlocale.h \
+ /usr/include/arm-linux-gnueabihf/bits/pthreadtypes.h \
+ /usr/include/arm-linux-gnueabihf/bits/setjmp.h \
+ ../../../src/common/common/iconv.h ../../../src/common/common/surface.h \
+ ../../../src/common/common/rect.h ../../../src/libguac/guacamole/layer.h \
+ ../../../src/libguac/guacamole/protocol.h \
+ ../../../src/libguac/guacamole/socket.h \
+ ../../../src/libguac/guacamole/socket-constants.h \
+ ../../../src/libguac/guacamole/socket-fntypes.h /usr/include/unistd.h \
+ /usr/include/arm-linux-gnueabihf/bits/posix_opt.h \
+ /usr/include/arm-linux-gnueabihf/bits/environments.h \
+ /usr/include/arm-linux-gnueabihf/bits/confname.h /usr/include/getopt.h \
+ vnc.h ../../../src/common/common/clipboard.h \
+ ../../../src/common/common/display.h ../../../src/common/common/cursor.h \
+ ../../../src/common/common/surface.h \
+ ../../../src/libguac/guacamole/user.h \
+ ../../../src/libguac/guacamole/user-constants.h settings.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include/stdbool.h \
+ /usr/include/rfb/rfbclient.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdio_lim.h \
+ /usr/include/arm-linux-gnueabihf/bits/sys_errlist.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdio.h /usr/include/stdlib.h \
+ /usr/include/arm-linux-gnueabihf/bits/waitflags.h \
+ /usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
+ /usr/include/arm-linux-gnueabihf/sys/types.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdlib-bsearch.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdlib-float.h \
+ /usr/include/string.h /usr/include/arm-linux-gnueabihf/bits/string.h \
+ /usr/include/arm-linux-gnueabihf/bits/string2.h \
+ /usr/include/arm-linux-gnueabihf/sys/time.h \
+ /usr/include/arm-linux-gnueabihf/sys/select.h \
+ /usr/include/arm-linux-gnueabihf/bits/select.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigset.h \
+ /usr/include/rfb/rfbproto.h /usr/include/rfb/rfbconfig.h \
+ /usr/include/zlib.h /usr/include/zconf.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed/limits.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/arm-linux-gnueabihf/bits/posix1_lim.h \
+ /usr/include/arm-linux-gnueabihf/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/arm-linux-gnueabihf/bits/posix2_lim.h \
+ /usr/include/arm-linux-gnueabihf/bits/xopen_lim.h \
+ /usr/include/netinet/in.h /usr/include/arm-linux-gnueabihf/sys/socket.h \
+ /usr/include/arm-linux-gnueabihf/sys/uio.h \
+ /usr/include/arm-linux-gnueabihf/bits/uio.h \
+ /usr/include/arm-linux-gnueabihf/bits/socket.h \
+ /usr/include/arm-linux-gnueabihf/bits/socket_type.h \
+ /usr/include/arm-linux-gnueabihf/bits/sockaddr.h \
+ /usr/include/arm-linux-gnueabihf/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/arm-linux-gnueabihf/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/arm-linux-gnueabihf/bits/in.h \
+ /usr/include/arm-linux-gnueabihf/bits/byteswap.h \
+ /usr/include/arm-linux-gnueabihf/bits/byteswap-16.h \
+ /usr/include/rfb/keysym.h ../../../src/pulse/pulse/pulse.h \
+ ../../../src/libguac/guacamole/audio.h \
+ ../../../src/libguac/guacamole/audio-fntypes.h \
+ ../../../src/libguac/guacamole/audio-types.h \
+ /usr/include/pulse/pulseaudio.h /usr/include/pulse/direction.h \
+ /usr/include/pulse/def.h /usr/include/inttypes.h \
+ /usr/include/pulse/cdecl.h /usr/include/pulse/sample.h \
+ /usr/include/arm-linux-gnueabihf/sys/param.h /usr/include/signal.h \
+ /usr/include/arm-linux-gnueabihf/bits/signum.h \
+ /usr/include/arm-linux-gnueabihf/bits/siginfo.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigaction.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigstack.h \
+ /usr/include/arm-linux-gnueabihf/sys/ucontext.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigcontext.h \
+ /usr/include/arm-linux-gnueabihf/asm/sigcontext.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigthread.h \
+ /usr/include/arm-linux-gnueabihf/bits/param.h /usr/include/linux/param.h \
+ /usr/include/arm-linux-gnueabihf/asm/param.h \
+ /usr/include/asm-generic/param.h /usr/include/pulse/gccmacro.h \
+ /usr/include/pulse/version.h /usr/include/pulse/mainloop-api.h \
+ /usr/include/pulse/format.h /usr/include/pulse/proplist.h \
+ /usr/include/pulse/channelmap.h /usr/include/pulse/context.h \
+ /usr/include/pulse/operation.h /usr/include/pulse/stream.h \
+ /usr/include/pulse/volume.h /usr/include/pulse/introspect.h \
+ /usr/include/pulse/subscribe.h /usr/include/pulse/scache.h \
+ /usr/include/pulse/error.h /usr/include/pulse/xmalloc.h \
+ /usr/include/assert.h /usr/include/pulse/utf8.h \
+ /usr/include/pulse/thread-mainloop.h /usr/include/pulse/mainloop.h \
+ /usr/include/pulse/mainloop-signal.h /usr/include/pulse/util.h \
+ /usr/include/pulse/timeval.h /usr/include/pulse/rtclock.h \
+ ../../../src/common-ssh/common-ssh/sftp.h \
+ ../../../src/common/common/json.h \
+ ../../../src/libguac/guacamole/stream.h \
+ ../../../src/common-ssh/common-ssh/ssh.h \
+ ../../../src/common-ssh/common-ssh/user.h \
+ ../../../src/common-ssh/common-ssh/key.h /usr/include/openssl/ossl_typ.h \
+ /usr/include/openssl/e_os2.h \
+ /usr/include/arm-linux-gnueabihf/openssl/opensslconf.h \
+ /usr/include/libssh2.h /usr/include/arm-linux-gnueabihf/sys/stat.h \
+ /usr/include/arm-linux-gnueabihf/bits/stat.h \
+ ../../../src/libguac/guacamole/object.h /usr/include/libssh2_sftp.h \
+ /usr/include/libssh2.h ../../../src/common-ssh/common-ssh/ssh.h \
+ ../../../src/common-ssh/common-ssh/user.h /usr/include/syslog.h \
+ /usr/include/arm-linux-gnueabihf/sys/syslog.h \
+ /usr/include/arm-linux-gnueabihf/bits/syslog-path.h
+
+/usr/include/stdc-predef.h:
+
+../../../config.h:
+
+client.h:
+
+../../../src/libguac/guacamole/client.h:
+
+../../../src/libguac/guacamole/client-fntypes.h:
+
+../../../src/libguac/guacamole/client-types.h:
+
+../../../src/libguac/guacamole/object-types.h:
+
+../../../src/libguac/guacamole/protocol-types.h:
+
+../../../src/libguac/guacamole/stream-types.h:
+
+../../../src/libguac/guacamole/user-types.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include/stdarg.h:
+
+../../../src/libguac/guacamole/client-constants.h:
+
+../../../src/libguac/guacamole/layer-types.h:
+
+../../../src/libguac/guacamole/pool-types.h:
+
+../../../src/libguac/guacamole/socket-types.h:
+
+../../../src/libguac/guacamole/timestamp-types.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features.h:
+
+/usr/include/arm-linux-gnueabihf/sys/cdefs.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wordsize.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wchar.h:
+
+../../../src/libguac/guacamole/user-fntypes.h:
+
+/usr/include/cairo/cairo.h:
+
+/usr/include/cairo/cairo-version.h:
+
+/usr/include/cairo/cairo-features.h:
+
+/usr/include/cairo/cairo-deprecated.h:
+
+/usr/include/pthread.h:
+
+/usr/include/endian.h:
+
+/usr/include/arm-linux-gnueabihf/bits/endian.h:
+
+/usr/include/sched.h:
+
+/usr/include/arm-linux-gnueabihf/bits/types.h:
+
+/usr/include/arm-linux-gnueabihf/bits/typesizes.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sched.h:
+
+/usr/include/arm-linux-gnueabihf/bits/time.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/arm-linux-gnueabihf/bits/pthreadtypes.h:
+
+/usr/include/arm-linux-gnueabihf/bits/setjmp.h:
+
+../../../src/common/common/iconv.h:
+
+../../../src/common/common/surface.h:
+
+../../../src/common/common/rect.h:
+
+../../../src/libguac/guacamole/layer.h:
+
+../../../src/libguac/guacamole/protocol.h:
+
+../../../src/libguac/guacamole/socket.h:
+
+../../../src/libguac/guacamole/socket-constants.h:
+
+../../../src/libguac/guacamole/socket-fntypes.h:
+
+/usr/include/unistd.h:
+
+/usr/include/arm-linux-gnueabihf/bits/posix_opt.h:
+
+/usr/include/arm-linux-gnueabihf/bits/environments.h:
+
+/usr/include/arm-linux-gnueabihf/bits/confname.h:
+
+/usr/include/getopt.h:
+
+vnc.h:
+
+../../../src/common/common/clipboard.h:
+
+../../../src/common/common/display.h:
+
+../../../src/common/common/cursor.h:
+
+../../../src/common/common/surface.h:
+
+../../../src/libguac/guacamole/user.h:
+
+../../../src/libguac/guacamole/user-constants.h:
+
+settings.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include/stdbool.h:
+
+/usr/include/rfb/rfbclient.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdio_lim.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sys_errlist.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/arm-linux-gnueabihf/bits/waitflags.h:
+
+/usr/include/arm-linux-gnueabihf/bits/waitstatus.h:
+
+/usr/include/arm-linux-gnueabihf/sys/types.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdlib-bsearch.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stdlib-float.h:
+
+/usr/include/string.h:
+
+/usr/include/arm-linux-gnueabihf/bits/string.h:
+
+/usr/include/arm-linux-gnueabihf/bits/string2.h:
+
+/usr/include/arm-linux-gnueabihf/sys/time.h:
+
+/usr/include/arm-linux-gnueabihf/sys/select.h:
+
+/usr/include/arm-linux-gnueabihf/bits/select.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigset.h:
+
+/usr/include/rfb/rfbproto.h:
+
+/usr/include/rfb/rfbconfig.h:
+
+/usr/include/zlib.h:
+
+/usr/include/zconf.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed/limits.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/arm-linux-gnueabihf/bits/posix1_lim.h:
+
+/usr/include/arm-linux-gnueabihf/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/arm-linux-gnueabihf/bits/posix2_lim.h:
+
+/usr/include/arm-linux-gnueabihf/bits/xopen_lim.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/arm-linux-gnueabihf/sys/socket.h:
+
+/usr/include/arm-linux-gnueabihf/sys/uio.h:
+
+/usr/include/arm-linux-gnueabihf/bits/uio.h:
+
+/usr/include/arm-linux-gnueabihf/bits/socket.h:
+
+/usr/include/arm-linux-gnueabihf/bits/socket_type.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sockaddr.h:
+
+/usr/include/arm-linux-gnueabihf/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/arm-linux-gnueabihf/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/arm-linux-gnueabihf/bits/in.h:
+
+/usr/include/arm-linux-gnueabihf/bits/byteswap.h:
+
+/usr/include/arm-linux-gnueabihf/bits/byteswap-16.h:
+
+/usr/include/rfb/keysym.h:
+
+../../../src/pulse/pulse/pulse.h:
+
+../../../src/libguac/guacamole/audio.h:
+
+../../../src/libguac/guacamole/audio-fntypes.h:
+
+../../../src/libguac/guacamole/audio-types.h:
+
+/usr/include/pulse/pulseaudio.h:
+
+/usr/include/pulse/direction.h:
+
+/usr/include/pulse/def.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/pulse/cdecl.h:
+
+/usr/include/pulse/sample.h:
+
+/usr/include/arm-linux-gnueabihf/sys/param.h:
+
+/usr/include/signal.h:
+
+/usr/include/arm-linux-gnueabihf/bits/signum.h:
+
+/usr/include/arm-linux-gnueabihf/bits/siginfo.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigaction.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigstack.h:
+
+/usr/include/arm-linux-gnueabihf/sys/ucontext.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigcontext.h:
+
+/usr/include/arm-linux-gnueabihf/asm/sigcontext.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigthread.h:
+
+/usr/include/arm-linux-gnueabihf/bits/param.h:
+
+/usr/include/linux/param.h:
+
+/usr/include/arm-linux-gnueabihf/asm/param.h:
+
+/usr/include/asm-generic/param.h:
+
+/usr/include/pulse/gccmacro.h:
+
+/usr/include/pulse/version.h:
+
+/usr/include/pulse/mainloop-api.h:
+
+/usr/include/pulse/format.h:
+
+/usr/include/pulse/proplist.h:
+
+/usr/include/pulse/channelmap.h:
+
+/usr/include/pulse/context.h:
+
+/usr/include/pulse/operation.h:
+
+/usr/include/pulse/stream.h:
+
+/usr/include/pulse/volume.h:
+
+/usr/include/pulse/introspect.h:
+
+/usr/include/pulse/subscribe.h:
+
+/usr/include/pulse/scache.h:
+
+/usr/include/pulse/error.h:
+
+/usr/include/pulse/xmalloc.h:
+
+/usr/include/assert.h:
+
+/usr/include/pulse/utf8.h:
+
+/usr/include/pulse/thread-mainloop.h:
+
+/usr/include/pulse/mainloop.h:
+
+/usr/include/pulse/mainloop-signal.h:
+
+/usr/include/pulse/util.h:
+
+/usr/include/pulse/timeval.h:
+
+/usr/include/pulse/rtclock.h:
+
+../../../src/common-ssh/common-ssh/sftp.h:
+
+../../../src/common/common/json.h:
+
+../../../src/libguac/guacamole/stream.h:
+
+../../../src/common-ssh/common-ssh/ssh.h:
+
+../../../src/common-ssh/common-ssh/user.h:
+
+../../../src/common-ssh/common-ssh/key.h:
+
+/usr/include/openssl/ossl_typ.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/include/arm-linux-gnueabihf/openssl/opensslconf.h:
+
+/usr/include/libssh2.h:
+
+/usr/include/arm-linux-gnueabihf/sys/stat.h:
+
+/usr/include/arm-linux-gnueabihf/bits/stat.h:
+
+../../../src/libguac/guacamole/object.h:
+
+/usr/include/libssh2_sftp.h:
+
+/usr/include/libssh2.h:
+
+../../../src/common-ssh/common-ssh/ssh.h:
+
+../../../src/common-ssh/common-ssh/user.h:
+
+/usr/include/syslog.h:
+
+/usr/include/arm-linux-gnueabihf/sys/syslog.h:
+
+/usr/include/arm-linux-gnueabihf/bits/syslog-path.h:
