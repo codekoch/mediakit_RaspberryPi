@@ -6,7 +6,11 @@ while ! [ -e /tmp/startFinished.tmp ]
 do
 echo "waiting for start.sh to be finished" 
 done
+
+while [ -e /tmp/startFinished.tmp ]
+do
 rm /tmp/startFinished.tmp
+done
 ### test if desktop manager is active
 test=1
 while [ $test -lt  2 ]
