@@ -9,7 +9,8 @@ sudo  sed -i 's/pin=.*$/pin="'$n1$n2$n3'"/g' /etc/init.d/info.sh
 
 # stop dnsmasq and hosapd
 sudo service dnsmasq stop
-sudo service hostapd stop
+#sudo service hostapd stop
+
 #sudo service networking restart
 sudo cp /etc/wpa_supplicant/wpa_supplicant.conf.normal /etc/wpa_supplicant/wpa_supplicant.conf
 echo "" > /var/lib/misc/dnsmasq.leases
@@ -51,10 +52,10 @@ else
 ### 2 detected --> use usb wlan (wlan1) device
  sudo cp /etc/dhcpcd.conf.usb /etc/dhcpcd.conf
  sudo service dhcpcd restart
- sudo ifconfig wlan1 1.1.1.1
- while [ -z $ipset ]; do
-  ipset="`sudo ifconfig | grep -i 'inet 1.1.1.1' | awk '{print $2}'` "
- done
+# sudo ifconfig wlan1 1.1.1.1
+# while [ -z $ipset ]; do
+#  ipset="`sudo ifconfig | grep -i 'inet 1.1.1.1' | awk '{print $2}'` "
+# done
  sudo cp /etc/hostapd/hostapd.conf.usb /etc/hostapd/hostapd.conf
  sudo cp /etc/dnsmasq.conf.usb /etc/dnsmasq.conf
 fi

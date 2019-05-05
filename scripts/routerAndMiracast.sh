@@ -31,6 +31,9 @@ sudo cp sources/etc/default/hostapd /etc/default/ #### Defaults for hostapd init
 #### unmask hostapd.service, it seems to be necessary ;-) 
 sudo systemctl unmask hostapd.service
 
+#### disable hostapd to boot at startup
+sudo systemctl disable hostapd
+
 #### copy dnsmasq config files
 sudo cp sources/etc/dnsmasq.conf* /etc/ #### copy dnsmasq.conf,dnsmasq.conf.intern, dnsmasq.conf.usb, dnsmasq.conf.normal
 

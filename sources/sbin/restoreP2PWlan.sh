@@ -16,7 +16,7 @@ then
 
 else
         sudo cp /etc/wpa_supplicant/wpa_supplicant.conf.normal /etc/wpa_supplicant/wpa_supplicant.conf
-        echo "device_name=$wlanssid" >> /etc/wpa_supplicant/wpa_supplicant.conf
+        #echo "device_name=$wlanssid" >> /etc/wpa_supplicant/wpa_supplicant.conf
         echo "" > /var/lib/misc/dnsmasq.leases
         sudo wpa_cli p2p_find type=progessive
         sudo wpa_cli set device_name $wlanssid
@@ -64,6 +64,10 @@ sudo ifconfig $p2pinterface 192.168.173.1
 wlanModul1="`ip link show | grep -i 'wlan1' | awk '{print $2}' | sed 's/://g'`"
 
 if ! [ -z $wlanModul1 ]; then
+sudo ifconfig wlan1 1.1.1.1
+while [ -z $ipset ]; do
+  ipset="`sudo ifconfig | grep -i 'inet 1.1.1.1' | awk '{print $2}'` "
+ done
 sudo /sbin/iptables -F
 sudo /sbin/iptables -X
 sudo /sbin/iptables -t nat -F

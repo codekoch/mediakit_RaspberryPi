@@ -2,7 +2,8 @@
 ### wait for all network functions
 check=0
 timestart=$(date +%s)
-while [ $check -lt  3 ]
+#while [ $check -lt  3 ]
+while [ $check -lt  2 ]
 do
 timenow=$(date +%s)
 timediff=$(($timenow - $timestart))
@@ -16,25 +17,28 @@ if [ $active1 -lt 2 ]; then
 sudo service dhcpcd restart
 sleep 3
 fi
-active2=`ps -aux | grep -i "hostapd" | wc -l`
-if [ $active2 -lt 2 ]; then
-sudo service hostapd restart
-sleep 3
-fi
+#active2=`ps -aux | grep -i "hostapd" | wc -l`
+#if [ $active2 -lt 2 ]; then
+#sudo service hostapd restart
+#sleep 3
+#fi
 active3=`ps -aux | grep -i "dnsmasq" | wc -l`
 if [ $active3 -lt 2 ]; then
 sudo service dnsmasq restart
 sleep 3
 fi
-check=$(($active1+$active2+$active3-3))
+#check=$(($active1+$active2+$active3-3))
+check=$(($active1+$active3-2))
 done
 sudo /sbin/restoreMkProfile.sh
 ### optional
 #sudo service smbd stop
 #sudo service nmbd stop
 #/sbin/blockAtStartup.sh 
+sleep 1
 sudo /etc/init.d/randomWifi.sh
 sudo /etc/init.d/info.sh
+sleep 1
 sudo rm /tmp/startFinished.tmp
 echo "1" > /tmp/startFinished.tmp
 sudo chmod 777 /tmp/startFinished.tmp
