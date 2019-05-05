@@ -9,6 +9,9 @@ sudo  sed -i 's/pin=.*$/pin="'$n1$n2$n3'"/g' /etc/init.d/info.sh
 
 # stop dnsmasq and hosapd
 sudo service dnsmasq stop
+sudo service wpa_supplicant stop
+sudo pkill wpa_supplicant
+
 #sudo service hostapd stop
 
 #sudo service networking restart
