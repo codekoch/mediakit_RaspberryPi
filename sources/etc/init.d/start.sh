@@ -4,8 +4,17 @@ check=0
 while [ $check -lt  3 ]
 do
 active1=`ps -aux | grep -i "dhcpcd" | wc -l`
+if [ $active1 -lt 2 ]; then
+sudo service dhcpcd restart
+fi
 active2=`ps -aux | grep -i "hostapd" | wc -l`
+if [ $active2 -lt 2 ]; then
+sudo service hostapd restart
+fi
 active3=`ps -aux | grep -i "dnsmasq" | wc -l`
+if [ $active3 -lt 2 ]; then
+sudo service dnsmasq restart
+fi
 check=$(($active1+$active2+$active3-3))
 done
 sudo /sbin/restoreMkProfile.sh

@@ -1,5 +1,6 @@
 #!/bin/sh
 # setting up p2p-wlan
+timestart=$(date +%s)
 sudo service dnsmasq stop
 sudo service hostapd stop
 mac="`sudo /sbin/ifconfig eth0 | grep 'ether ' | awk '{ print $2}'`"
@@ -42,6 +43,12 @@ else
                         sleep 2
                         ain="$(sudo wpa_cli interface)"
                         echo "$ain"
+                        timenow=$(date +%s)
+                        timediff=$(($timenow - $timestart))
+                        if [ $timediff -gt 90 ]; then
+                          zenity --width=400 --height=100 --info --text="Got problems setting up miracast and hotspot.(90s and so success:-().\nRestart recommended!" --timeout=3 2> /dev/null  
+                          
+                        fi
                 done
                sleep 4
                ain="$(sudo wpa_cli interface)"

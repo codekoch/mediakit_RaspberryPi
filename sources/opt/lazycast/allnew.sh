@@ -1,5 +1,5 @@
 #!/bin/bash
-pin="65100000"
+pin="86100000"
 cd /opt/lazycast
 ### Wait until start.sh finished
 while ! [ -e /tmp/startFinished.tmp ]
@@ -19,19 +19,41 @@ do
  if [ $test -lt 2 ]; then
   pcmanfm --desktop --profile LXDE-pi &
   sleep 1
-  pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/logo.jpg"
-  sleep 2
-  test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
  fi
+ pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/logo.jpg"
+ sleep 2
+ test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
 done
 
 while :
 do      
         ipset="`sudo ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}'`"
         if [ -z $ipset ]; then
-        pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/loading.jpg"
+        test=1
+         while [ $test -lt  2 ]
+          do
+            test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+            if [ $test -lt 2 ]; then
+              pcmanfm --desktop --profile LXDE-pi &
+              sleep 1
+            fi
+            pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/loading.jpg"
+            sleep 2
+            test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+         done
         sudo /sbin/restoreP2PWlan.sh
-        pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/info.jpg"
+        test=1
+         while [ $test -lt  2 ]
+          do
+            test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+            if [ $test -lt 2 ]; then
+              pcmanfm --desktop --profile LXDE-pi &
+              sleep 1
+            fi
+            pcmanfm --set-wallpaper="/usr/share/rpd-wallpaper/info.jpg"
+            sleep 2
+            test=`ps -aux | grep -i "pcmanfm --desktop --profile LXDE-pi" | wc -l`
+         done
         else
         echo "" > /var/lib/misc/dnsmasq.leases
         sudo service dnsmasq restart

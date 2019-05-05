@@ -342,7 +342,7 @@ configure:11594: checking how to hardcode library paths into programs
 configure:11619: result: immediate
 configure:11721: checking for shl_load
 configure:11721: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccmOrR47.o: In function `main':
+/tmp/ccQVYv4m.o: In function `main':
 /home/pi/mediakit_RaspberryPi/guacamole-server-0.9.14/conftest.c:57: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:11721: $? = 1
@@ -454,7 +454,7 @@ configure: failed program was:
 configure:11759: result: no
 configure:11764: checking for dlopen
 configure:11764: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccYFJ4Aj.o: In function `main':
+/tmp/ccUd7Sbx.o: In function `main':
 /home/pi/mediakit_RaspberryPi/guacamole-server-0.9.14/conftest.c:57: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:11764: $? = 1
@@ -530,7 +530,7 @@ configure:12004: $? = 0
 configure:12022: result: yes
 configure:12027: checking whether a statically linked program can dlopen itself
 configure:12107: gcc -o conftest -g -O2  -DHAVE_DLFCN_H  -Wl,--export-dynamic -static conftest.c -ldl  >&5
-/tmp/ccWyG65Y.o: In function `main':
+/tmp/ccsLjz29.o: In function `main':
 /home/pi/mediakit_RaspberryPi/guacamole-server-0.9.14/configure:12086: warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 configure:12110: $? = 0
 configure:12128: result: no
@@ -1452,7 +1452,7 @@ configure:16367: $? = 0
 configure:16376: result: yes
 configure:16422: checking for gcry_control in -lssh2
 configure:16447: gcc -o conftest -g -O2   conftest.c -lssh2   >&5
-/usr/bin/ld: /tmp/ccwe2Hl4.o: undefined reference to symbol 'gcry_control@@GCRYPT_1.6'
+/usr/bin/ld: /tmp/cc8omxX4.o: undefined reference to symbol 'gcry_control@@GCRYPT_1.6'
 //lib/arm-linux-gnueabihf/libgcrypt.so.20: error adding symbols: DSO missing from command line
 collect2: error: ld returned 1 exit status
 configure:16447: $? = 1
@@ -1585,6 +1585,7 @@ config.status:1217: creating src/protocols/ssh/Makefile
 config.status:1217: creating src/protocols/telnet/Makefile
 config.status:1217: creating src/protocols/vnc/Makefile
 config.status:1217: creating config.h
+config.status:1398: config.h is unchanged
 config.status:1446: executing depfiles commands
 config.status:1446: executing libtool commands
 
