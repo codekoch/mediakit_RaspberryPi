@@ -11,6 +11,7 @@ while [ -e /tmp/startFinished.tmp ]
 do
 rm /tmp/startFinished.tmp
 done
+sleep 3
 ### test if desktop manager is active
 test=1
 while [ $test -lt  2 ]
