@@ -1,6 +1,5 @@
 #!/bin/sh
 # setting up p2p-wlan
-timestart=$(date +%s)
 sudo service dnsmasq stop
 sudo service hostapd stop
 mac="`sudo /sbin/ifconfig eth0 | grep 'ether ' | awk '{ print $2}'`"
@@ -10,6 +9,7 @@ wlanssid="MK-"$mac2
 #sudo  sed -i "s/device_name=.*$/device_name=$wlanssid/g" /etc/wpa_supplicant/wpa_supplicant.conf
 ain="$(sudo wpa_cli interface)"
 echo "${ain}"
+timestart=$(date +%s)
 if [ `echo "${ain}" | grep -c "p2p-wl"` -gt 0 ] 
 then
         echo "already on"
