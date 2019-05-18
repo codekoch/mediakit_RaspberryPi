@@ -29,6 +29,10 @@ sudo apt-get install -y youtube-dl
 sudo apt-get install -y simplescreenrecorder
 sudo apt-get install -y ballerburg
 
+#### dvd support
+sudo apt-get install -y libdvd-pkg libdvdnav4
+sudo dpkg-reconfigure libdvd-pkg
+
 #### parsec
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
