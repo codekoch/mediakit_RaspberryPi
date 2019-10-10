@@ -3,9 +3,9 @@
 #ipset="`sudo ifconfig | grep -i 'inet 192.168.173.1' | awk '{print $2}'`"
 #done
 #/sbin/checkupdate.sh
-mv /home/mk/.kodi /home/mk/.kodi_old
-mv /home/mk/.kodi_old /home/mk/.kodi
-chmod -R 777 /home/mk/.kodi
+#mv /home/mk/.kodi /home/mk/.kodi_old
+#mv /home/mk/.kodi_old /home/mk/.kodi
+#chmod -R 777 /home/mk/.kodi
 wlanModul1="`ip link show | grep -i 'wlan1' | awk '{print $2}' | sed 's/://g'`"
 if ! [ -z $wlanModul1 ]; then
 mkdir /home/mk/.config/autostart
