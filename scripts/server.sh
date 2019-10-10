@@ -55,8 +55,8 @@ sudo cp sources/sbin/startFileBrowser.sh /sbin/
 sudo chmod 755 /sbin/startFileBrowser.sh
 
 #### copy file-browser script 
-sudo cp sources/usr/bin/file-browser /usr/bin/
-sudo chmod 755 /usr/bin/file-browser
+#sudo cp sources/usr/bin/file-browser /usr/bin/
+#sudo chmod 755 /usr/bin/file-browser
 
 #### copy node-file-manager  
 #sudo cp -R sources/usr/lib/node_modules/file-browser /usr/lib/node_modules/
