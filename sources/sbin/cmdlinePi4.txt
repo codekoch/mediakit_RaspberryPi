@@ -1,0 +1,1 @@
+elevator=deadline bootmenutimeout=1 datadev=sda2 qmap=de console=tty3 splash quiet plymouth.ignore-serial-consoles logo.nologo usbhid.mousepoll=8 vt.global_cursor_default=0
