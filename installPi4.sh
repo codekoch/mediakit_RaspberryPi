@@ -37,7 +37,7 @@ yellow_msg "-install update ability..."
 
 ######## install startup and mediakit scripts
 yellow_msg "-install startup and mediakit scripts..."
-scripts/mediakitScripts.sh
+scripts/mediakitScriptsPi4.sh
 
 ######## install server ability
 yellow_msg "-install server functions..."
