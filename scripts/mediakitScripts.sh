@@ -28,6 +28,10 @@ sudo cp sources/etc/init.d/info.sh /etc/init.d
 
 #### copy randomWifi.sh which is called by start.sh and generates random wlan passwort and miracast pin and resets/set all network devices and configs
 sudo cp sources/etc/init.d/randomWifi.sh /etc/init.d
+sudo cp sources/sbin/startHotspot.sh /sbin/
+sudo chmod 755 /sbin/startHotspot.sh
+sudo cp sources/sbin/stopHotspot.sh /sbin/
+sudo chmod 755 /sbin/stopHotspot.sh
 
 #### copy loginscript.sh which is called by lightdm as session-setup-script 
 sudo cp sources/sbin/loginscript.sh /sbin/
