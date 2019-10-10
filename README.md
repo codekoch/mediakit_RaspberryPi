@@ -42,7 +42,7 @@ or
 
 **6.** Change current password of user pi (usually **raspberry**) to **mediakitadmin** or to whatever you want.
 
-**7.** Relax and take a coffee. Installation will take a while...
+**7.** Relax and take a coffee. Installation will take a while...allways answer with **ok** or **yes**  when prompted
 
 **8.** Reboot
 
