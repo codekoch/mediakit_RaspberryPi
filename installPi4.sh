@@ -30,7 +30,7 @@ scripts/layoutAndUser.sh
 
 ######## install router and miracast ability
 yellow_msg "-install router and miracast ability..."
-scripts/routerAndMiracast.sh
+scripts/routerAndMiracastPi4.sh
 
 ######## install update ability
 yellow_msg "-install update ability..."
