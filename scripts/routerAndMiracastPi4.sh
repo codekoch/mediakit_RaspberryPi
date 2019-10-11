@@ -21,9 +21,7 @@ sudo apt-get install -y dnsmasq
 sudo apt-get install -y hostapd
 
 #### install miracast ability 
-sudo cp -R sources/opt/lazycast /opt/
-sudo chmod -R 755 /opt/lazycast
-sudo cp -R sources/opt/lazycastPi4/* /opt/lazycast/
+sudo cp -R sources/opt/lazycastPi4/lazycast /opt/
 sudo chmod -R 755 /opt/lazycast
 wget http://ftp.us.debian.org/debian/pool/main/w/wpa/wpasupplicant_2.4-1+deb9u4_armhf.deb
 sudo apt --allow-downgrades install -y ./wpasupplicant_2.4-1+deb9u4_armhf.deb
