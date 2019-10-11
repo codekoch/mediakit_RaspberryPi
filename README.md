@@ -37,6 +37,7 @@ or
 
 **5.** Run install.sh script:
 >./install.sh
+(>./installPi4.sh for RaspbberyPi 4 ... still experimental)
 
 ![install3](http://mediakit.education/images/gitclonenew.jpg)
 
