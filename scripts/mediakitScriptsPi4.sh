@@ -14,6 +14,10 @@ function blue_msg() {
 echo -e "\\033[34;1m${@}\033[0m"
 }
 
+######## pymsgbox.native does not exist in Raspbian Buster
+sudo  sed -i 's/import pymsgbox.native/#import pymsgbox.native/g' sources/sbin/*.py
+
+
 ######## copy lightdm config file (autologin mk, display-setup-script start.sh, session-setup-script loginscript.sh)
 sudo cp sources/etc/lightdm/lightdm.conf /etc/lightdm/
 
