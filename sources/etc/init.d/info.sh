@@ -27,10 +27,10 @@ yp=$(($yp+$pointsize))
 sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $bigpointsize -draw "text 0,"$yp" '"$wlanssid"'" /usr/share/rpd-wallpaper/info.jpg
 yp=$(($yp+$bigpointsize))
 sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $bigpointsize -draw "text 0,"$yp" 'KEY:"$password"'" /usr/share/rpd-wallpaper/info.jpg
-#if ! [ -z $wlanModul1 ]; then
+if ! [ -z $wlanModul1 ]; then
 yp=$(($yp+$bigpointsize))
 sudo mogrify -fill yellow -gravity NorthEast -font FreeMono -pointsize $bigpointsize -draw "text 0,"$yp" 'PIN:"$pin"00000'" /usr/share/rpd-wallpaper/info.jpg
-#fi
+fi
 
 if  [ -z $lanIP ]; then
 yp=$(($yp+$bigpointsize))
